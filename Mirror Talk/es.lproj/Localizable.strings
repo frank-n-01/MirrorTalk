@@ -1,0 +1,37 @@
+// Copyright © 2022 Ni Fu. All rights reserved.
+
+// MARK: - Setting
+
+"Setting" = "Ajuste";
+"Done" = "OK";
+
+"Font" = "Fuente";
+"Text" = "Texto";
+"System" = "Sistema";
+
+// MARK: - Font
+
+"Weight" = "Peso";
+"ultraLight" = "ultraligero";
+"thin" = "delgado";
+"light" = "ligero";
+"regular" = "regular";
+"medium" = "medio";
+"semibold" = "semibold";
+"bold" = "negrita";
+"heavy" = "pesado";
+"black" = "negro";
+
+"Design" = "Diseño";
+"default" = "defecto";
+"monospaced" = "monoespaciado";
+"rounded" = "redondeado";
+"serif" = "serif";
+
+// MARK: - Text
+
+"Auto Correction" = "Auto-corrección";
+
+// MARK: - System
+
+"Hide Status Bar" = "Ocultar barra de estado";
