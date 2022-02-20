@@ -11,6 +11,7 @@ struct SettingView: View {
             Form {
                 FontSettingView(viewModel: viewModel)
                 TextSettingView(viewModel: viewModel)
+                SystemSettingView(viewModel: viewModel)
             }
             .navigationTitle("Setting")
             .navigationBarTitleDisplayMode(.inline)

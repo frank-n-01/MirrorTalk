@@ -7,7 +7,10 @@ class MirrorTalkViewModel: ObservableObject {
     @Published var message: String {
         didSet {
             if message != oldValue {
-                UserDefaults.standard.set(message, forKey: UDKey.message.rawValue)
+                UserDefaults.standard.set(
+                    message,
+                    forKey: UDKey.message.rawValue
+                )
             }
         }
     }
@@ -18,17 +21,32 @@ class MirrorTalkViewModel: ObservableObject {
     /// The text style to display and edit the message
     @Published var texts: Texts
     
+    /// Hide the system status bar or not.
+    @Published var hideStatusBar: Bool {
+        didSet {
+            UserDefaults.standard.set(
+                hideStatusBar,
+                forKey: UDKey.hideStatusBar.rawValue
+            )
+        }
+    }
+    
     init() {
         self.message = UserDefaults.standard
             .string(forKey: UDKey.message.rawValue) ?? ""
         self.fonts = Fonts()
         self.texts = Texts()
+        self.hideStatusBar = UserDefaults.standard
+            .bool(forKey: UDKey.hideStatusBar.rawValue)
         
-        let isInitialized = UserDefaults.standard.bool(forKey: UDKey.isInitialized.rawValue)
+        let isInitialized = UserDefaults.standard
+            .bool(forKey: UDKey.isInitialized.rawValue)
+        
         if !isInitialized {
             UserDefaults.standard.set(true, forKey: UDKey.isInitialized.rawValue)
             self.fonts.initUD()
             self.texts.initUD()
+            self.hideStatusBar = true
         }
     }
     
