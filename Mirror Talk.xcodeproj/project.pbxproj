@@ -1,0 +1,824 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6560493027AC1E280037C20B /* Mirror_TalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560492F27AC1E280037C20B /* Mirror_TalkApp.swift */; };
+		6560493227AC1E280037C20B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560493127AC1E280037C20B /* ContentView.swift */; };
+		6560493427AC1E2A0037C20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6560493327AC1E2A0037C20B /* Assets.xcassets */; };
+		6560493727AC1E2A0037C20B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6560493627AC1E2A0037C20B /* Preview Assets.xcassets */; };
+		6560494127AC1E2A0037C20B /* Mirror_TalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560494027AC1E2A0037C20B /* Mirror_TalkTests.swift */; };
+		6560494B27AC1E2A0037C20B /* Mirror_TalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560494A27AC1E2A0037C20B /* Mirror_TalkUITests.swift */; };
+		6560494D27AC1E2A0037C20B /* Mirror_TalkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560494C27AC1E2A0037C20B /* Mirror_TalkUITestsLaunchTests.swift */; };
+		6560495B27AD76EB0037C20B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6560495A27AD76EB0037C20B /* AVFoundation.framework */; };
+		6560495E27B2B8340037C20B /* MirrorTalkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560495D27B2B8340037C20B /* MirrorTalkViewModel.swift */; };
+		6560496027B2B8600037C20B /* MirrorTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560495F27B2B8600037C20B /* MirrorTalkView.swift */; };
+		6560496627B2C3450037C20B /* MirroredTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560496527B2C3450037C20B /* MirroredTextView.swift */; };
+		6560496827B2C5530037C20B /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560496727B2C5530037C20B /* TextEditorView.swift */; };
+		6560497127B3FB490037C20B /* ClearTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497027B3FB490037C20B /* ClearTextButton.swift */; };
+		6560497327B3FBDA0037C20B /* ShareButtonWithPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497227B3FBDA0037C20B /* ShareButtonWithPopover.swift */; };
+		6560497527B3FCB70037C20B /* SettingButtonWithSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497427B3FCB70037C20B /* SettingButtonWithSheet.swift */; };
+		6560497B27B55C4D0037C20B /* ShareButtonWithSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497A27B55C4D0037C20B /* ShareButtonWithSheet.swift */; };
+		6560497D27B55F8F0037C20B /* ShareActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497C27B55F8F0037C20B /* ShareActivityView.swift */; };
+		6560497F27B5633C0037C20B /* ShowKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497E27B5633C0037C20B /* ShowKeyboardButton.swift */; };
+		6560498327BBECC90037C20B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560498227BBECC90037C20B /* SettingView.swift */; };
+		6560498B27BBF04C0037C20B /* SettingButtonWithPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560498A27BBF04C0037C20B /* SettingButtonWithPopover.swift */; };
+		6560498D27BFDF970037C20B /* FontDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560498C27BFDF970037C20B /* FontDesign.swift */; };
+		6560498F27BFE0500037C20B /* FontWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560498E27BFE0500037C20B /* FontWeight.swift */; };
+		6560499127BFE0D80037C20B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560499027BFE0D80037C20B /* Fonts.swift */; };
+		6560499427BFE56E0037C20B /* FontSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560499327BFE56E0037C20B /* FontSettingView.swift */; };
+		65DC012527C09FDB005D3B87 /* TextAlignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC012427C09FDB005D3B87 /* TextAlignments.swift */; };
+		65DC012927C1D3CD005D3B87 /* TextSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC012827C1D3CD005D3B87 /* TextSettingView.swift */; };
+		65DC012B27C202ED005D3B87 /* UDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC012A27C202ED005D3B87 /* UDKey.swift */; };
+		65DC012E27C2107A005D3B87 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC012D27C2107A005D3B87 /* Texts.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6560493D27AC1E2A0037C20B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6560492427AC1E280037C20B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6560492B27AC1E280037C20B;
+			remoteInfo = "Mirror Talk";
+		};
+		6560494727AC1E2A0037C20B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6560492427AC1E280037C20B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6560492B27AC1E280037C20B;
+			remoteInfo = "Mirror Talk";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6560492C27AC1E280037C20B /* Mirror Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mirror Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6560492F27AC1E280037C20B /* Mirror_TalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mirror_TalkApp.swift; sourceTree = "<group>"; };
+		6560493127AC1E280037C20B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6560493327AC1E2A0037C20B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6560493627AC1E2A0037C20B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6560493C27AC1E2A0037C20B /* Mirror TalkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mirror TalkTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6560494027AC1E2A0037C20B /* Mirror_TalkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mirror_TalkTests.swift; sourceTree = "<group>"; };
+		6560494627AC1E2A0037C20B /* Mirror TalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Mirror TalkUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6560494A27AC1E2A0037C20B /* Mirror_TalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mirror_TalkUITests.swift; sourceTree = "<group>"; };
+		6560494C27AC1E2A0037C20B /* Mirror_TalkUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mirror_TalkUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6560495A27AD76EB0037C20B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		6560495C27AD79B40037C20B /* Mirror-Talk-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mirror-Talk-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6560495D27B2B8340037C20B /* MirrorTalkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorTalkViewModel.swift; sourceTree = "<group>"; };
+		6560495F27B2B8600037C20B /* MirrorTalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorTalkView.swift; sourceTree = "<group>"; };
+		6560496527B2C3450037C20B /* MirroredTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirroredTextView.swift; sourceTree = "<group>"; };
+		6560496727B2C5530037C20B /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
+		6560497027B3FB490037C20B /* ClearTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearTextButton.swift; sourceTree = "<group>"; };
+		6560497227B3FBDA0037C20B /* ShareButtonWithPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonWithPopover.swift; sourceTree = "<group>"; };
+		6560497427B3FCB70037C20B /* SettingButtonWithSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButtonWithSheet.swift; sourceTree = "<group>"; };
+		6560497A27B55C4D0037C20B /* ShareButtonWithSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonWithSheet.swift; sourceTree = "<group>"; };
+		6560497C27B55F8F0037C20B /* ShareActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareActivityView.swift; sourceTree = "<group>"; };
+		6560497E27B5633C0037C20B /* ShowKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowKeyboardButton.swift; sourceTree = "<group>"; };
+		6560498227BBECC90037C20B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		6560498A27BBF04C0037C20B /* SettingButtonWithPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButtonWithPopover.swift; sourceTree = "<group>"; };
+		6560498C27BFDF970037C20B /* FontDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDesign.swift; sourceTree = "<group>"; };
+		6560498E27BFE0500037C20B /* FontWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontWeight.swift; sourceTree = "<group>"; };
+		6560499027BFE0D80037C20B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		6560499327BFE56E0037C20B /* FontSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSettingView.swift; sourceTree = "<group>"; };
+		65DC012427C09FDB005D3B87 /* TextAlignments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlignments.swift; sourceTree = "<group>"; };
+		65DC012827C1D3CD005D3B87 /* TextSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSettingView.swift; sourceTree = "<group>"; };
+		65DC012A27C202ED005D3B87 /* UDKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDKey.swift; sourceTree = "<group>"; };
+		65DC012D27C2107A005D3B87 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6560492927AC1E280037C20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6560495B27AD76EB0037C20B /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6560493927AC1E2A0037C20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6560494327AC1E2A0037C20B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6560492327AC1E280037C20B = {
+			isa = PBXGroup;
+			children = (
+				6560492E27AC1E280037C20B /* Mirror Talk */,
+				6560493F27AC1E2A0037C20B /* Mirror TalkTests */,
+				6560494927AC1E2A0037C20B /* Mirror TalkUITests */,
+				6560492D27AC1E280037C20B /* Products */,
+				6560495927AD76EB0037C20B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6560492D27AC1E280037C20B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6560492C27AC1E280037C20B /* Mirror Talk.app */,
+				6560493C27AC1E2A0037C20B /* Mirror TalkTests.xctest */,
+				6560494627AC1E2A0037C20B /* Mirror TalkUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6560492E27AC1E280037C20B /* Mirror Talk */ = {
+			isa = PBXGroup;
+			children = (
+				6560495C27AD79B40037C20B /* Mirror-Talk-Info.plist */,
+				6560492F27AC1E280037C20B /* Mirror_TalkApp.swift */,
+				6560493127AC1E280037C20B /* ContentView.swift */,
+				6560496327B2C3000037C20B /* ViewModel */,
+				6560496127B2BB790037C20B /* View */,
+				6560496427B2C3090037C20B /* Model */,
+				6560493327AC1E2A0037C20B /* Assets.xcassets */,
+				6560493527AC1E2A0037C20B /* Preview Content */,
+			);
+			path = "Mirror Talk";
+			sourceTree = "<group>";
+		};
+		6560493527AC1E2A0037C20B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6560493627AC1E2A0037C20B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6560493F27AC1E2A0037C20B /* Mirror TalkTests */ = {
+			isa = PBXGroup;
+			children = (
+				6560494027AC1E2A0037C20B /* Mirror_TalkTests.swift */,
+			);
+			path = "Mirror TalkTests";
+			sourceTree = "<group>";
+		};
+		6560494927AC1E2A0037C20B /* Mirror TalkUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6560494A27AC1E2A0037C20B /* Mirror_TalkUITests.swift */,
+				6560494C27AC1E2A0037C20B /* Mirror_TalkUITestsLaunchTests.swift */,
+			);
+			path = "Mirror TalkUITests";
+			sourceTree = "<group>";
+		};
+		6560495927AD76EB0037C20B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6560495A27AD76EB0037C20B /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6560496127B2BB790037C20B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6560495F27B2B8600037C20B /* MirrorTalkView.swift */,
+				6560498027BBEC890037C20B /* Text */,
+				6560498427BBED3C0037C20B /* Setting */,
+				6560498127BBEC990037C20B /* Activity */,
+				6560496B27B3FA390037C20B /* Button */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6560496327B2C3000037C20B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6560495D27B2B8340037C20B /* MirrorTalkViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6560496427B2C3090037C20B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				65DC012227C09F7A005D3B87 /* Font */,
+				65DC012327C09F95005D3B87 /* Text */,
+				65DC012C27C208C8005D3B87 /* UserDefaults */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6560496B27B3FA390037C20B /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				6560498527BBEF7C0037C20B /* Share */,
+				6560498827BBF01E0037C20B /* Clear */,
+				6560498627BBEF880037C20B /* Keyboard */,
+				6560498727BBF0130037C20B /* Setting */,
+			);
+			path = Button;
+			sourceTree = "<group>";
+		};
+		6560498027BBEC890037C20B /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				6560496527B2C3450037C20B /* MirroredTextView.swift */,
+				6560496727B2C5530037C20B /* TextEditorView.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		6560498127BBEC990037C20B /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				6560497C27B55F8F0037C20B /* ShareActivityView.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		6560498427BBED3C0037C20B /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				6560498227BBECC90037C20B /* SettingView.swift */,
+				65DC012727C1D37F005D3B87 /* Text */,
+				6560499227BFE55C0037C20B /* Font */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		6560498527BBEF7C0037C20B /* Share */ = {
+			isa = PBXGroup;
+			children = (
+				6560497227B3FBDA0037C20B /* ShareButtonWithPopover.swift */,
+				6560497A27B55C4D0037C20B /* ShareButtonWithSheet.swift */,
+			);
+			path = Share;
+			sourceTree = "<group>";
+		};
+		6560498627BBEF880037C20B /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				6560497E27B5633C0037C20B /* ShowKeyboardButton.swift */,
+			);
+			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		6560498727BBF0130037C20B /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				6560497427B3FCB70037C20B /* SettingButtonWithSheet.swift */,
+				6560498A27BBF04C0037C20B /* SettingButtonWithPopover.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		6560498827BBF01E0037C20B /* Clear */ = {
+			isa = PBXGroup;
+			children = (
+				6560497027B3FB490037C20B /* ClearTextButton.swift */,
+			);
+			path = Clear;
+			sourceTree = "<group>";
+		};
+		6560499227BFE55C0037C20B /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				6560499327BFE56E0037C20B /* FontSettingView.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		65DC012227C09F7A005D3B87 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				6560499027BFE0D80037C20B /* Fonts.swift */,
+				6560498C27BFDF970037C20B /* FontDesign.swift */,
+				6560498E27BFE0500037C20B /* FontWeight.swift */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		65DC012327C09F95005D3B87 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				65DC012427C09FDB005D3B87 /* TextAlignments.swift */,
+				65DC012D27C2107A005D3B87 /* Texts.swift */,
+			);
+			name = Text;
+			sourceTree = "<group>";
+		};
+		65DC012727C1D37F005D3B87 /* Text */ = {
+			isa = PBXGroup;
+			children = (
+				65DC012827C1D3CD005D3B87 /* TextSettingView.swift */,
+			);
+			path = Text;
+			sourceTree = "<group>";
+		};
+		65DC012C27C208C8005D3B87 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				65DC012A27C202ED005D3B87 /* UDKey.swift */,
+			);
+			name = UserDefaults;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6560492B27AC1E280037C20B /* Mirror Talk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6560495027AC1E2A0037C20B /* Build configuration list for PBXNativeTarget "Mirror Talk" */;
+			buildPhases = (
+				6560492827AC1E280037C20B /* Sources */,
+				6560492927AC1E280037C20B /* Frameworks */,
+				6560492A27AC1E280037C20B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Mirror Talk";
+			productName = "Mirror Talk";
+			productReference = 6560492C27AC1E280037C20B /* Mirror Talk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6560493B27AC1E2A0037C20B /* Mirror TalkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6560495327AC1E2A0037C20B /* Build configuration list for PBXNativeTarget "Mirror TalkTests" */;
+			buildPhases = (
+				6560493827AC1E2A0037C20B /* Sources */,
+				6560493927AC1E2A0037C20B /* Frameworks */,
+				6560493A27AC1E2A0037C20B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6560493E27AC1E2A0037C20B /* PBXTargetDependency */,
+			);
+			name = "Mirror TalkTests";
+			productName = "Mirror TalkTests";
+			productReference = 6560493C27AC1E2A0037C20B /* Mirror TalkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6560494527AC1E2A0037C20B /* Mirror TalkUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6560495627AC1E2A0037C20B /* Build configuration list for PBXNativeTarget "Mirror TalkUITests" */;
+			buildPhases = (
+				6560494227AC1E2A0037C20B /* Sources */,
+				6560494327AC1E2A0037C20B /* Frameworks */,
+				6560494427AC1E2A0037C20B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6560494827AC1E2A0037C20B /* PBXTargetDependency */,
+			);
+			name = "Mirror TalkUITests";
+			productName = "Mirror TalkUITests";
+			productReference = 6560494627AC1E2A0037C20B /* Mirror TalkUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6560492427AC1E280037C20B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					6560492B27AC1E280037C20B = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					6560493B27AC1E2A0037C20B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6560492B27AC1E280037C20B;
+					};
+					6560494527AC1E2A0037C20B = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 6560492B27AC1E280037C20B;
+					};
+				};
+			};
+			buildConfigurationList = 6560492727AC1E280037C20B /* Build configuration list for PBXProject "Mirror Talk" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ja,
+				"zh-Hans",
+				"zh-Hant",
+				es,
+			);
+			mainGroup = 6560492327AC1E280037C20B;
+			productRefGroup = 6560492D27AC1E280037C20B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6560492B27AC1E280037C20B /* Mirror Talk */,
+				6560493B27AC1E2A0037C20B /* Mirror TalkTests */,
+				6560494527AC1E2A0037C20B /* Mirror TalkUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6560492A27AC1E280037C20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6560493727AC1E2A0037C20B /* Preview Assets.xcassets in Resources */,
+				6560493427AC1E2A0037C20B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6560493A27AC1E2A0037C20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6560494427AC1E2A0037C20B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6560492827AC1E280037C20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6560496827B2C5530037C20B /* TextEditorView.swift in Sources */,
+				65DC012527C09FDB005D3B87 /* TextAlignments.swift in Sources */,
+				65DC012E27C2107A005D3B87 /* Texts.swift in Sources */,
+				6560498B27BBF04C0037C20B /* SettingButtonWithPopover.swift in Sources */,
+				6560496627B2C3450037C20B /* MirroredTextView.swift in Sources */,
+				6560493227AC1E280037C20B /* ContentView.swift in Sources */,
+				6560499427BFE56E0037C20B /* FontSettingView.swift in Sources */,
+				6560498F27BFE0500037C20B /* FontWeight.swift in Sources */,
+				6560497327B3FBDA0037C20B /* ShareButtonWithPopover.swift in Sources */,
+				6560496027B2B8600037C20B /* MirrorTalkView.swift in Sources */,
+				6560497F27B5633C0037C20B /* ShowKeyboardButton.swift in Sources */,
+				6560498327BBECC90037C20B /* SettingView.swift in Sources */,
+				6560497B27B55C4D0037C20B /* ShareButtonWithSheet.swift in Sources */,
+				65DC012927C1D3CD005D3B87 /* TextSettingView.swift in Sources */,
+				6560493027AC1E280037C20B /* Mirror_TalkApp.swift in Sources */,
+				6560498D27BFDF970037C20B /* FontDesign.swift in Sources */,
+				6560497527B3FCB70037C20B /* SettingButtonWithSheet.swift in Sources */,
+				6560495E27B2B8340037C20B /* MirrorTalkViewModel.swift in Sources */,
+				6560497D27B55F8F0037C20B /* ShareActivityView.swift in Sources */,
+				6560497127B3FB490037C20B /* ClearTextButton.swift in Sources */,
+				65DC012B27C202ED005D3B87 /* UDKey.swift in Sources */,
+				6560499127BFE0D80037C20B /* Fonts.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6560493827AC1E2A0037C20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6560494127AC1E2A0037C20B /* Mirror_TalkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6560494227AC1E2A0037C20B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6560494B27AC1E2A0037C20B /* Mirror_TalkUITests.swift in Sources */,
+				6560494D27AC1E2A0037C20B /* Mirror_TalkUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6560493E27AC1E2A0037C20B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6560492B27AC1E280037C20B /* Mirror Talk */;
+			targetProxy = 6560493D27AC1E2A0037C20B /* PBXContainerItemProxy */;
+		};
+		6560494827AC1E2A0037C20B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6560492B27AC1E280037C20B /* Mirror Talk */;
+			targetProxy = 6560494727AC1E2A0037C20B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6560494E27AC1E2A0037C20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6560494F27AC1E2A0037C20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6560495127AC1E2A0037C20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mirror Talk/Preview Content\"";
+				DEVELOPMENT_TEAM = GKDU4N5FBR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mirror-Talk-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ni-Fu.Mirror-Talk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6560495227AC1E2A0037C20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Mirror Talk/Preview Content\"";
+				DEVELOPMENT_TEAM = GKDU4N5FBR;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Mirror-Talk-Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ni-Fu.Mirror-Talk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6560495427AC1E2A0037C20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GKDU4N5FBR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ni-Fu.Mirror-TalkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mirror Talk.app/Mirror Talk";
+			};
+			name = Debug;
+		};
+		6560495527AC1E2A0037C20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GKDU4N5FBR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ni-Fu.Mirror-TalkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mirror Talk.app/Mirror Talk";
+			};
+			name = Release;
+		};
+		6560495727AC1E2A0037C20B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GKDU4N5FBR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ni-Fu.Mirror-TalkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mirror Talk";
+			};
+			name = Debug;
+		};
+		6560495827AC1E2A0037C20B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GKDU4N5FBR;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ni-Fu.Mirror-TalkUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Mirror Talk";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6560492727AC1E280037C20B /* Build configuration list for PBXProject "Mirror Talk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6560494E27AC1E2A0037C20B /* Debug */,
+				6560494F27AC1E2A0037C20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6560495027AC1E2A0037C20B /* Build configuration list for PBXNativeTarget "Mirror Talk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6560495127AC1E2A0037C20B /* Debug */,
+				6560495227AC1E2A0037C20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6560495327AC1E2A0037C20B /* Build configuration list for PBXNativeTarget "Mirror TalkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6560495427AC1E2A0037C20B /* Debug */,
+				6560495527AC1E2A0037C20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6560495627AC1E2A0037C20B /* Build configuration list for PBXNativeTarget "Mirror TalkUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6560495727AC1E2A0037C20B /* Debug */,
+				6560495827AC1E2A0037C20B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6560492427AC1E280037C20B /* Project object */;
+}

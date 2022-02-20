@@ -1,0 +1,31 @@
+// Copyright © 2022 Ni Fu. All rights reserved.
+
+import SwiftUI
+
+/// Show the system provided share activity view.
+struct ShareActivityView: UIViewControllerRepresentable {
+    
+    /// The collection of items to be shared.
+    let items: [Any]
+    
+    /// Custom activities that will be added to the share sheet.
+    let activities: [UIActivity]?
+    
+    init(_ items: [Any], _ activities: [UIActivity]? = nil) {
+        self.items = items
+        self.activities = activities
+    }
+
+    func makeUIViewController(
+        context: UIViewControllerRepresentableContext<ShareActivityView>
+    ) -> UIActivityViewController {
+        return UIActivityViewController(
+            activityItems: items,
+            applicationActivities: activities
+        )
+    }
+
+    func updateUIViewController(_ uiViewController: UIActivityViewController,
+                    context: UIViewControllerRepresentableContext<ShareActivityView>
+    ) {}
+}
