@@ -1,0 +1,35 @@
+// Copyright © 2022 Ni Fu. All rights reserved.
+
+"Setting" = "設定";
+"Done" = "完成";
+
+"Font" = "字體";
+"Text" = "文本";
+"System" = "系統";
+
+// MARK: - Font
+
+"Weight" = "粗細";
+"ultraLight" = "超輕";
+"thin" = "細";
+"light" = "輕";
+"regular" = "常規";
+"medium" = "中等";
+"semibold" = "半粗";
+"bold" = "粗";
+"heavy" = "重";
+"black" = "黑";
+
+"Design" = "設計";
+"default" = "默認";
+"monospaced" = "等距";
+"rounded" = "圓角";
+"serif" = "襯線";
+
+// MARK: - Text
+
+"Auto Correction" = "自動改正";
+
+// MARK: - System
+
+"Hide Status Bar" = "隱藏狀態欄";

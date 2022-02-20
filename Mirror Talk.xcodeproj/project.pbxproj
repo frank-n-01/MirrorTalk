@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		65272FCC27C26A940013079E /* SystemSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65272FCB27C26A940013079E /* SystemSettingView.swift */; };
+		65272FCF27C272540013079E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65272FD127C272540013079E /* Localizable.strings */; };
 		6560493027AC1E280037C20B /* Mirror_TalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560492F27AC1E280037C20B /* Mirror_TalkApp.swift */; };
 		6560493227AC1E280037C20B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560493127AC1E280037C20B /* ContentView.swift */; };
 		6560493427AC1E2A0037C20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6560493327AC1E2A0037C20B /* Assets.xcassets */; };
@@ -57,6 +58,11 @@
 
 /* Begin PBXFileReference section */
 		65272FCB27C26A940013079E /* SystemSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSettingView.swift; sourceTree = "<group>"; };
+		65272FD027C272540013079E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		65272FD227C272590013079E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		65272FD327C2725E0013079E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		65272FD427C2725F0013079E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		65272FD527C2725F0013079E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6560492C27AC1E280037C20B /* Mirror Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mirror Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6560492F27AC1E280037C20B /* Mirror_TalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mirror_TalkApp.swift; sourceTree = "<group>"; };
 		6560493127AC1E280037C20B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -117,12 +123,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		65272FCA27C26A230013079E /* Other */ = {
+		65272FCA27C26A230013079E /* System */ = {
 			isa = PBXGroup;
 			children = (
 				65272FCB27C26A940013079E /* SystemSettingView.swift */,
 			);
-			path = Other;
+			path = System;
 			sourceTree = "<group>";
 		};
 		6560492327AC1E280037C20B = {
@@ -156,6 +162,7 @@
 				6560496127B2BB790037C20B /* View */,
 				6560496427B2C3090037C20B /* Model */,
 				6560493327AC1E2A0037C20B /* Assets.xcassets */,
+				65272FD127C272540013079E /* Localizable.strings */,
 				6560493527AC1E2A0037C20B /* Preview Content */,
 			);
 			path = "Mirror Talk";
@@ -258,7 +265,7 @@
 				6560498227BBECC90037C20B /* SettingView.swift */,
 				65DC012727C1D37F005D3B87 /* Text */,
 				6560499227BFE55C0037C20B /* Font */,
-				65272FCA27C26A230013079E /* Other */,
+				65272FCA27C26A230013079E /* System */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -449,6 +456,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6560493727AC1E2A0037C20B /* Preview Assets.xcassets in Resources */,
+				65272FCF27C272540013079E /* Localizable.strings in Resources */,
 				6560493427AC1E2A0037C20B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,6 +539,21 @@
 			targetProxy = 6560494727AC1E2A0037C20B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		65272FD127C272540013079E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				65272FD027C272540013079E /* en */,
+				65272FD227C272590013079E /* zh-Hans */,
+				65272FD327C2725E0013079E /* zh-Hant */,
+				65272FD427C2725F0013079E /* ja */,
+				65272FD527C2725F0013079E /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		6560494E27AC1E2A0037C20B /* Debug */ = {

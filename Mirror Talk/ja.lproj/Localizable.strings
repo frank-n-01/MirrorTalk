@@ -1,0 +1,37 @@
+// Copyright © 2022 Ni Fu. All rights reserved.
+
+// MARK: - Setting
+
+"Setting" = "設定";
+"Done" = "完了";
+
+"Font" = "フォント";
+"Text" = "テキスト";
+"System" = "システム";
+
+// MARK: - Font
+
+"Weight" = "太さ";
+"ultraLight" = "ウルトラライト";
+"thin" = "シン";
+"light" = "ライト";
+"regular" = "レギュラー";
+"medium" = "ミディアム";
+"semibold" = "セミボールド";
+"bold" = "ボールド";
+"heavy" = "ヘビー";
+"black" = "ブラック";
+
+"Design" = "書体";
+"default" = "デフォルト";
+"monospaced" = "等幅";
+"rounded" = "丸文字";
+"serif" = "セリフ";
+
+// MARK: - Text
+
+"Auto Correction" = "自動補正";
+
+// MARK: - System
+
+"Hide Status Bar" = "ステータスバーを非表示";
