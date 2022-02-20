@@ -88,3 +88,9 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+Mirror Talk.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+Mirror Talk.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+Mirror Talk/Assets.xcassets/AccentColor.colorset/Contents.json
+Mirror Talk/Assets.xcassets/AppIcon.appiconset/Contents.json
+Mirror Talk/Assets.xcassets/Contents.json
+Mirror Talk/Preview Content/Preview Assets.xcassets/Contents.json
