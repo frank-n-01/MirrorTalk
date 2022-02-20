@@ -18,6 +18,11 @@ struct SettingButtonWithPopover: View {
         }
         .popover(isPresented: $show) {
             SettingView(viewModel: viewModel, show: $show)
+                .frame(
+                    width: UIScreen.main.bounds.width / 2,
+                    height: UIScreen.main.bounds.height / 2,
+                    alignment: .center
+                )
         }
     }
 }

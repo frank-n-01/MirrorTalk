@@ -26,7 +26,7 @@ struct MirrorTalkView: View {
                     Spacer()
                 }
             }
-            .statusBar(hidden: true)
+            .statusBar(hidden: viewModel.hideStatusBar)
         }
     }
     
