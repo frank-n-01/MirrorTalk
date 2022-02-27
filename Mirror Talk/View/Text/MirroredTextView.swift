@@ -15,6 +15,7 @@ struct MirroredTextView: View {
                     .multilineTextAlignment(viewModel.texts.alignment.value)
                     .fixedSize(horizontal: false, vertical: true)
                     .padding()
+                    .padding(.horizontal, 5.0)
                     .frame(
                         maxWidth: .infinity,
                         maxHeight: .infinity,
