@@ -1,7 +1,6 @@
 // Copyright © 2022 Ni Fu. All rights reserved.
 
 // MARK: - Setting
-
 "Setting" = "Ajuste";
 "Done" = "OK";
 
@@ -10,7 +9,6 @@
 "System" = "Sistema";
 
 // MARK: - Font
-
 "Weight" = "Peso";
 "ultraLight" = "ultraligero";
 "thin" = "delgado";
@@ -29,9 +27,8 @@
 "serif" = "serif";
 
 // MARK: - Text
-
 "Auto Correction" = "Auto-corrección";
 
 // MARK: - System
-
 "Hide Status Bar" = "Ocultar barra de estado";
+"Single Mode" = "Modo singular";

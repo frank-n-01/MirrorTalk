@@ -7,8 +7,8 @@ struct SystemSettingView: View {
     
     var body: some View {
         Section {
-            Toggle("Hide Status Bar", isOn: $viewModel.hideStatusBar)
-                .font(.title3)
+            Toggle("Single Mode", isOn: $viewModel.isSingleMode).font(.title3)
+            Toggle("Hide Status Bar", isOn: $viewModel.hideStatusBar).font(.title3)
         } header: {
             Text("System")
         }
