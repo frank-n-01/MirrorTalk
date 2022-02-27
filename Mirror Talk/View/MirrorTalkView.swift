@@ -11,8 +11,10 @@ struct MirrorTalkView: View {
     var body: some View {
         GeometryReader { _ in
             VStack {
-                MirroredTextView(viewModel: viewModel)
-                Divider()
+                if !viewModel.isSingleMode {
+                    MirroredTextView(viewModel: viewModel)
+                    Divider()
+                }
                 TextEditorView(viewModel: viewModel, isFocused: _isFocused)
             }
             .toolbar {

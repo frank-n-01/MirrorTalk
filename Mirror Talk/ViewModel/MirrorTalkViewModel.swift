@@ -31,6 +31,15 @@ class MirrorTalkViewModel: ObservableObject {
         }
     }
     
+    @Published var isSingleMode: Bool {
+        didSet {
+            UserDefaults.standard.set(
+                isSingleMode,
+                forKey: UDKey.isSingleMode.rawValue
+            )
+        }
+    }
+    
     init() {
         self.message = UserDefaults.standard
             .string(forKey: UDKey.message.rawValue) ?? ""
@@ -38,6 +47,8 @@ class MirrorTalkViewModel: ObservableObject {
         self.texts = Texts()
         self.hideStatusBar = UserDefaults.standard
             .bool(forKey: UDKey.hideStatusBar.rawValue)
+        self.isSingleMode = UserDefaults.standard
+            .bool(forKey: UDKey.isSingleMode.rawValue)
         
         let isInitialized = UserDefaults.standard
             .bool(forKey: UDKey.isInitialized.rawValue)
@@ -47,6 +58,7 @@ class MirrorTalkViewModel: ObservableObject {
             self.fonts.initUD()
             self.texts.initUD()
             self.hideStatusBar = true
+            self.isSingleMode = false
         }
     }
     

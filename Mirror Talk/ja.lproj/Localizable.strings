@@ -1,7 +1,6 @@
 // Copyright © 2022 Ni Fu. All rights reserved.
 
 // MARK: - Setting
-
 "Setting" = "設定";
 "Done" = "完了";
 
@@ -10,7 +9,6 @@
 "System" = "システム";
 
 // MARK: - Font
-
 "Weight" = "太さ";
 "ultraLight" = "ウルトラライト";
 "thin" = "シン";
@@ -29,9 +27,8 @@
 "serif" = "セリフ";
 
 // MARK: - Text
-
 "Auto Correction" = "自動補正";
 
 // MARK: - System
-
 "Hide Status Bar" = "ステータスバーを非表示";
+"Single Mode" = "シングルモード";
