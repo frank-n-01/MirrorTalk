@@ -5,8 +5,6 @@ import SwiftUI
 struct MirrorTalkView: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     @FocusState private var isFocused: Bool
-    @State private var showSettingMenu = false
-    @State private var showShareSheet = false
     
     var body: some View {
         GeometryReader { _ in
@@ -40,7 +38,7 @@ struct MirrorTalkView: View {
             Spacer()
             ClearTextButton(clear: viewModel.clear)
             Spacer()
-            settingButton
+            SettingButtonWithSheet(viewModel: viewModel, isFocused: _isFocused)
         }
     }
     
@@ -56,17 +54,6 @@ struct MirrorTalkView: View {
                 ShareButtonWithPopover(message: $viewModel.message, isFocused: _isFocused)
             } else {
                 ShareButtonWithSheet(message: $viewModel.message, isFocused: _isFocused)
-            }
-        }
-    }
-    
-    /// Open the setting menu.
-    var settingButton: some View {
-        Group {
-            if isPad {
-                SettingButtonWithPopover(viewModel: viewModel, isFocused: _isFocused)
-            } else {
-                SettingButtonWithSheet(viewModel: viewModel, isFocused: _isFocused)
             }
         }
     }

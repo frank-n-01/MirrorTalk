@@ -28,7 +28,6 @@
 		6560497D27B55F8F0037C20B /* ShareActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497C27B55F8F0037C20B /* ShareActivityView.swift */; };
 		6560497F27B5633C0037C20B /* ShowKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497E27B5633C0037C20B /* ShowKeyboardButton.swift */; };
 		6560498327BBECC90037C20B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560498227BBECC90037C20B /* SettingView.swift */; };
-		6560498B27BBF04C0037C20B /* SettingButtonWithPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560498A27BBF04C0037C20B /* SettingButtonWithPopover.swift */; };
 		6560498D27BFDF970037C20B /* FontDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560498C27BFDF970037C20B /* FontDesign.swift */; };
 		6560498F27BFE0500037C20B /* FontWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560498E27BFE0500037C20B /* FontWeight.swift */; };
 		6560499127BFE0D80037C20B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560499027BFE0D80037C20B /* Fonts.swift */; };
@@ -86,7 +85,6 @@
 		6560497C27B55F8F0037C20B /* ShareActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareActivityView.swift; sourceTree = "<group>"; };
 		6560497E27B5633C0037C20B /* ShowKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowKeyboardButton.swift; sourceTree = "<group>"; };
 		6560498227BBECC90037C20B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		6560498A27BBF04C0037C20B /* SettingButtonWithPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButtonWithPopover.swift; sourceTree = "<group>"; };
 		6560498C27BFDF970037C20B /* FontDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDesign.swift; sourceTree = "<group>"; };
 		6560498E27BFE0500037C20B /* FontWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontWeight.swift; sourceTree = "<group>"; };
 		6560499027BFE0D80037C20B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
@@ -291,7 +289,6 @@
 			isa = PBXGroup;
 			children = (
 				6560497427B3FCB70037C20B /* SettingButtonWithSheet.swift */,
-				6560498A27BBF04C0037C20B /* SettingButtonWithPopover.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -486,7 +483,6 @@
 				65DC012527C09FDB005D3B87 /* TextAlignments.swift in Sources */,
 				65DC012E27C2107A005D3B87 /* Texts.swift in Sources */,
 				65272FCC27C26A940013079E /* SystemSettingView.swift in Sources */,
-				6560498B27BBF04C0037C20B /* SettingButtonWithPopover.swift in Sources */,
 				6560496627B2C3450037C20B /* MirroredTextView.swift in Sources */,
 				6560493227AC1E280037C20B /* ContentView.swift in Sources */,
 				6560499427BFE56E0037C20B /* FontSettingView.swift in Sources */,

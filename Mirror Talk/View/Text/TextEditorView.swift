@@ -16,6 +16,6 @@ struct TextEditorView: View {
             .multilineTextAlignment(viewModel.texts.alignment.value)
             .disableAutocorrection(!viewModel.texts.isAutocorrectionEnabled)
             .padding()
-            .padding(.top, -8.0)
+            .padding(.top, -10.0)
     }
 }

@@ -16,6 +16,7 @@ struct MirroredTextView: View {
                     .fixedSize(horizontal: false, vertical: true)
                     .padding()
                     .padding(.horizontal, 5.0)
+                    .padding(.top, -5.0)
                     .frame(
                         maxWidth: .infinity,
                         maxHeight: .infinity,

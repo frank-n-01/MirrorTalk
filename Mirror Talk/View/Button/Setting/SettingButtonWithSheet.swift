@@ -4,7 +4,6 @@ import SwiftUI
 
 struct SettingButtonWithSheet: View {
     @State private var show = false
-    
     @ObservedObject var viewModel: MirrorTalkViewModel
     @FocusState var isFocused: Bool
     
