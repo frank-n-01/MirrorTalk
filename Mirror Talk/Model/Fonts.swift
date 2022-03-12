@@ -2,13 +2,26 @@
 
 import SwiftUI
 
+///
+/// The font size, weight, and design properties.
+///
 struct Fonts {
+    
+    ///
+    /// The font size automatically saved in User Defaults.
+    ///
     var size: CGFloat {
         didSet {
-            UserDefaults.standard.set(size, forKey: UDKey.fontSize.rawValue)
+            UserDefaults.standard.set(
+                size,
+                forKey: UDKey.fontSize.rawValue
+            )
         }
     }
     
+    ///
+    /// The font weight automatically saved in User Defaults.
+    ///
     var weight: FontWeight {
         didSet {
             UserDefaults.standard.set(
@@ -18,6 +31,9 @@ struct Fonts {
         }
     }
     
+    ///
+    /// The font design automatically saved in User Defaults.
+    ///
     var design: FontDesign {
         didSet {
             UserDefaults.standard.set(
@@ -27,43 +43,56 @@ struct Fonts {
         }
     }
     
-    // Default values.
+    ///
+    /// The default font size.
+    ///
     static let SIZE: CGFloat = 30.0
+    
+    ///
+    /// The default font weight.
+    ///
     static let WEIGHT: FontWeight = .regular
+    
+    ///
+    /// The default font design.
+    ///
     static let DESIGN: FontDesign = .defaultDesign
     
+    ///
     /// The range of editable font size.
+    ///
     static let SIZE_RANGE: ClosedRange<CGFloat> = 10...300
-        
+    
+    ///
+    /// Initialize properties with the User Defaults values.
+    ///
     init() {
-        let isInitialized = UserDefaults.standard.bool(forKey: UDKey.isInitialized.rawValue)
-        
-        let size = UserDefaults.standard.double(forKey: UDKey.fontSize.rawValue)
-        if Self.SIZE_RANGE.contains(size) {
-            self.size = size
+        if MirrorTalkViewModel.isInitialized {
+            let size = UserDefaults.standard.double(
+                forKey: UDKey.fontSize.rawValue
+            )
+            
+            if Self.SIZE_RANGE.contains(size) {
+                self.size = size
+            } else {
+                self.size = Self.SIZE
+            }
+            
+            self.weight = FontWeight(
+                rawValue: UserDefaults.standard.integer(
+                    forKey: UDKey.fontWeight.rawValue
+                )
+            ) ?? Self.WEIGHT
+            
+            self.design = FontDesign(
+                rawValue: UserDefaults.standard.integer(
+                    forKey: UDKey.fontDesign.rawValue
+                )
+            ) ?? Self.DESIGN
         } else {
             self.size = Self.SIZE
-        }
-        
-        let weight = UserDefaults.standard.integer(forKey: UDKey.fontWeight.rawValue)
-        if isInitialized {
-            self.weight = FontWeight(rawValue: weight) ?? Self.WEIGHT
-        } else {
             self.weight = Self.WEIGHT
-        }
-        
-        let design = UserDefaults.standard.integer(forKey: UDKey.fontDesign.rawValue)
-        if isInitialized {
-            self.design = FontDesign(rawValue: design) ?? Self.DESIGN
-        } else {
             self.design = Self.DESIGN
         }
-    }
-    
-    /// Set the default values in the User Defaults.
-    mutating func initUD() {
-        self.size = Self.SIZE
-        self.weight = Self.WEIGHT
-        self.design = Self.DESIGN
     }
 }

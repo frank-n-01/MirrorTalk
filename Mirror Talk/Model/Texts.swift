@@ -2,7 +2,14 @@
 
 import SwiftUI
 
+///
+/// The text format and editing properties.
+///
 struct Texts {
+    
+    ///
+    /// The text alignment property automatically saved in User Defaults.
+    ///
     var alignment: TextAlignments {
         didSet {
             UserDefaults.standard.set(
@@ -12,6 +19,9 @@ struct Texts {
         }
     }
     
+    ///
+    /// The ON / OFF of the auto-correction function automatically saved in User Defaults.
+    ///
     var isAutocorrectionEnabled: Bool {
         didSet {
             UserDefaults.standard.set(
@@ -21,32 +31,33 @@ struct Texts {
         }
     }
     
-    // Default values.
+    ///
+    /// The default text alignment selection.
+    ///
     static let ALIGNMENT: TextAlignments = .leading
+    
+    ///
+    /// The default ON / OFF of the auto-correction function.
+    /// 
     static let IS_AUTOCORRECTION_ENABLED: Bool = true
     
+    ///
+    /// Initialize properties with the User Defaults values.
+    ///
     init() {
-        let isInitialized = UserDefaults.standard.bool(forKey: UDKey.isInitialized.rawValue)
-        
-        let alignment = UserDefaults.standard.integer(forKey: UDKey.textAlignment.rawValue)
-        if isInitialized {
-            self.alignment = TextAlignments(rawValue: alignment) ?? Self.ALIGNMENT
+        if MirrorTalkViewModel.isInitialized {
+            self.alignment = TextAlignments(
+                rawValue: UserDefaults.standard.integer(
+                    forKey: UDKey.textAlignment.rawValue
+                )
+            ) ?? Self.ALIGNMENT
+            
+            self.isAutocorrectionEnabled = UserDefaults.standard.bool(
+                forKey: UDKey.isAutocorrectionEnabed.rawValue
+            )
         } else {
             self.alignment = Self.ALIGNMENT
-        }
-        
-        let isAutocorrectionEnabled = UserDefaults.standard
-            .bool(forKey: UDKey.isAutocorrectionEnabed.rawValue)
-        if isInitialized {
-            self.isAutocorrectionEnabled = isAutocorrectionEnabled
-        } else {
             self.isAutocorrectionEnabled = Self.IS_AUTOCORRECTION_ENABLED
         }
-    }
-    
-    /// Set the default values in the User Defaults.
-    mutating func initUD() {
-        self.alignment = Self.ALIGNMENT
-        self.isAutocorrectionEnabled = Self.IS_AUTOCORRECTION_ENABLED
     }
 }

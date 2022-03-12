@@ -2,6 +2,9 @@
 
 import SwiftUI
 
+///
+/// Show the activity view with a sheet for iPhone and others.
+///
 struct ShareButtonWithSheet: View {
     @State private var show = false
     @Binding var message: String
@@ -10,6 +13,7 @@ struct ShareButtonWithSheet: View {
     var body: some View {
         Button {
             show.toggle()
+            
             // Hide the keyboard.
             isFocused = false
         } label: {

@@ -4,11 +4,12 @@
 "Setting" = "設定";
 "Done" = "完成";
 
+// MARK: - Header
 "Font" = "字體";
 "Text" = "文本";
 "System" = "系統";
 
-// MARK: - Font
+// MARK: - Font Weight
 "Weight" = "粗細";
 "ultraLight" = "超輕";
 "thin" = "細";
@@ -20,6 +21,7 @@
 "heavy" = "重";
 "black" = "黑";
 
+// MARK: - Font Design
 "Design" = "設計";
 "default" = "默認";
 "monospaced" = "等距";

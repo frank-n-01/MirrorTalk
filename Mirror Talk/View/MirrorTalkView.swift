@@ -2,17 +2,18 @@
 
 import SwiftUI
 
+///
+/// The main view of texts and tool bar buttons.
+///
 struct MirrorTalkView: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     @FocusState private var isFocused: Bool
-    @State private var showSettingMenu = false
-    @State private var showShareSheet = false
     
     var body: some View {
         GeometryReader { _ in
             VStack {
-                if !viewModel.isSingleMode {
-                    MirroredTextView(viewModel: viewModel)
+                if !viewModel.system.isSingleMode {
+                    ReflectedText(viewModel: viewModel)
                     Divider()
                 }
                 TextEditorView(viewModel: viewModel, isFocused: _isFocused)
@@ -28,45 +29,45 @@ struct MirrorTalkView: View {
                     Spacer()
                 }
             }
-            .statusBar(hidden: viewModel.hideStatusBar)
+            .statusBar(hidden: viewModel.system.hideStatusBar)
         }
     }
     
+    ///
+    /// The four buttons in the tool bar.
+    ///
     var toolbarButtons: some View {
         Group {
             shareButton
             Spacer()
-            ShowKeyboardButton(isFocused: _isFocused)
+            KeyboardButton(isFocused: _isFocused)
             Spacer()
-            ClearTextButton(clear: viewModel.clear)
+            ClearButton(clear: viewModel.clear)
             Spacer()
-            settingButton
+            SettingButton(viewModel: viewModel, isFocused: _isFocused)
         }
     }
     
-    /// Whether the type of device is iPad.
+    ///
+    /// Whether the type of current device is iPad.
+    ///
     var isPad: Bool {
         return UIDevice().userInterfaceIdiom == .pad
     }
     
-    /// Share the message using system provided activities.
+    ///
+    /// Share the message using the system provided activities.
+    ///
     var shareButton: some View {
         Group {
             if isPad {
-                ShareButtonWithPopover(message: $viewModel.message, isFocused: _isFocused)
+                ShareButtonWithPopover(
+                    message: $viewModel.message, isFocused: _isFocused
+                )
             } else {
-                ShareButtonWithSheet(message: $viewModel.message, isFocused: _isFocused)
-            }
-        }
-    }
-    
-    /// Open the setting menu.
-    var settingButton: some View {
-        Group {
-            if isPad {
-                SettingButtonWithPopover(viewModel: viewModel, isFocused: _isFocused)
-            } else {
-                SettingButtonWithSheet(viewModel: viewModel, isFocused: _isFocused)
+                ShareButtonWithSheet(
+                    message: $viewModel.message, isFocused: _isFocused
+                )
             }
         }
     }

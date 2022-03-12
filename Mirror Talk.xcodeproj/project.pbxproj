@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		65272FCC27C26A940013079E /* SystemSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65272FCB27C26A940013079E /* SystemSettingView.swift */; };
+		65272FCC27C26A940013079E /* SystemSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65272FCB27C26A940013079E /* SystemSetting.swift */; };
 		65272FCF27C272540013079E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65272FD127C272540013079E /* Localizable.strings */; };
 		6560493027AC1E280037C20B /* Mirror_TalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560492F27AC1E280037C20B /* Mirror_TalkApp.swift */; };
 		6560493227AC1E280037C20B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560493127AC1E280037C20B /* ContentView.swift */; };
@@ -19,22 +19,22 @@
 		6560495B27AD76EB0037C20B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6560495A27AD76EB0037C20B /* AVFoundation.framework */; };
 		6560495E27B2B8340037C20B /* MirrorTalkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560495D27B2B8340037C20B /* MirrorTalkViewModel.swift */; };
 		6560496027B2B8600037C20B /* MirrorTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560495F27B2B8600037C20B /* MirrorTalkView.swift */; };
-		6560496627B2C3450037C20B /* MirroredTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560496527B2C3450037C20B /* MirroredTextView.swift */; };
+		6560496627B2C3450037C20B /* ReflectedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560496527B2C3450037C20B /* ReflectedText.swift */; };
 		6560496827B2C5530037C20B /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560496727B2C5530037C20B /* TextEditorView.swift */; };
-		6560497127B3FB490037C20B /* ClearTextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497027B3FB490037C20B /* ClearTextButton.swift */; };
+		6560497127B3FB490037C20B /* ClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497027B3FB490037C20B /* ClearButton.swift */; };
 		6560497327B3FBDA0037C20B /* ShareButtonWithPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497227B3FBDA0037C20B /* ShareButtonWithPopover.swift */; };
-		6560497527B3FCB70037C20B /* SettingButtonWithSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497427B3FCB70037C20B /* SettingButtonWithSheet.swift */; };
+		6560497527B3FCB70037C20B /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497427B3FCB70037C20B /* SettingButton.swift */; };
 		6560497B27B55C4D0037C20B /* ShareButtonWithSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497A27B55C4D0037C20B /* ShareButtonWithSheet.swift */; };
 		6560497D27B55F8F0037C20B /* ShareActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497C27B55F8F0037C20B /* ShareActivityView.swift */; };
-		6560497F27B5633C0037C20B /* ShowKeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497E27B5633C0037C20B /* ShowKeyboardButton.swift */; };
+		6560497F27B5633C0037C20B /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497E27B5633C0037C20B /* KeyboardButton.swift */; };
 		6560498327BBECC90037C20B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560498227BBECC90037C20B /* SettingView.swift */; };
-		6560498B27BBF04C0037C20B /* SettingButtonWithPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560498A27BBF04C0037C20B /* SettingButtonWithPopover.swift */; };
 		6560498D27BFDF970037C20B /* FontDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560498C27BFDF970037C20B /* FontDesign.swift */; };
 		6560498F27BFE0500037C20B /* FontWeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560498E27BFE0500037C20B /* FontWeight.swift */; };
 		6560499127BFE0D80037C20B /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560499027BFE0D80037C20B /* Fonts.swift */; };
-		6560499427BFE56E0037C20B /* FontSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560499327BFE56E0037C20B /* FontSettingView.swift */; };
+		6560499427BFE56E0037C20B /* FontSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560499327BFE56E0037C20B /* FontSetting.swift */; };
+		65AB672927DC2A3F00FA96A8 /* Systems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AB672827DC2A3F00FA96A8 /* Systems.swift */; };
 		65DC012527C09FDB005D3B87 /* TextAlignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC012427C09FDB005D3B87 /* TextAlignments.swift */; };
-		65DC012927C1D3CD005D3B87 /* TextSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC012827C1D3CD005D3B87 /* TextSettingView.swift */; };
+		65DC012927C1D3CD005D3B87 /* TextSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC012827C1D3CD005D3B87 /* TextSetting.swift */; };
 		65DC012B27C202ED005D3B87 /* UDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC012A27C202ED005D3B87 /* UDKey.swift */; };
 		65DC012E27C2107A005D3B87 /* Texts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC012D27C2107A005D3B87 /* Texts.swift */; };
 /* End PBXBuildFile section */
@@ -57,7 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		65272FCB27C26A940013079E /* SystemSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSettingView.swift; sourceTree = "<group>"; };
+		65272FCB27C26A940013079E /* SystemSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSetting.swift; sourceTree = "<group>"; };
 		65272FD027C272540013079E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		65272FD227C272590013079E /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		65272FD327C2725E0013079E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
@@ -77,22 +77,22 @@
 		6560495C27AD79B40037C20B /* Mirror-Talk-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Mirror-Talk-Info.plist"; sourceTree = SOURCE_ROOT; };
 		6560495D27B2B8340037C20B /* MirrorTalkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorTalkViewModel.swift; sourceTree = "<group>"; };
 		6560495F27B2B8600037C20B /* MirrorTalkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorTalkView.swift; sourceTree = "<group>"; };
-		6560496527B2C3450037C20B /* MirroredTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirroredTextView.swift; sourceTree = "<group>"; };
+		6560496527B2C3450037C20B /* ReflectedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectedText.swift; sourceTree = "<group>"; };
 		6560496727B2C5530037C20B /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
-		6560497027B3FB490037C20B /* ClearTextButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearTextButton.swift; sourceTree = "<group>"; };
+		6560497027B3FB490037C20B /* ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButton.swift; sourceTree = "<group>"; };
 		6560497227B3FBDA0037C20B /* ShareButtonWithPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonWithPopover.swift; sourceTree = "<group>"; };
-		6560497427B3FCB70037C20B /* SettingButtonWithSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButtonWithSheet.swift; sourceTree = "<group>"; };
+		6560497427B3FCB70037C20B /* SettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
 		6560497A27B55C4D0037C20B /* ShareButtonWithSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonWithSheet.swift; sourceTree = "<group>"; };
 		6560497C27B55F8F0037C20B /* ShareActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareActivityView.swift; sourceTree = "<group>"; };
-		6560497E27B5633C0037C20B /* ShowKeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowKeyboardButton.swift; sourceTree = "<group>"; };
+		6560497E27B5633C0037C20B /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
 		6560498227BBECC90037C20B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
-		6560498A27BBF04C0037C20B /* SettingButtonWithPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButtonWithPopover.swift; sourceTree = "<group>"; };
 		6560498C27BFDF970037C20B /* FontDesign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontDesign.swift; sourceTree = "<group>"; };
 		6560498E27BFE0500037C20B /* FontWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontWeight.swift; sourceTree = "<group>"; };
 		6560499027BFE0D80037C20B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
-		6560499327BFE56E0037C20B /* FontSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSettingView.swift; sourceTree = "<group>"; };
+		6560499327BFE56E0037C20B /* FontSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSetting.swift; sourceTree = "<group>"; };
+		65AB672827DC2A3F00FA96A8 /* Systems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Systems.swift; sourceTree = "<group>"; };
 		65DC012427C09FDB005D3B87 /* TextAlignments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlignments.swift; sourceTree = "<group>"; };
-		65DC012827C1D3CD005D3B87 /* TextSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSettingView.swift; sourceTree = "<group>"; };
+		65DC012827C1D3CD005D3B87 /* TextSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSetting.swift; sourceTree = "<group>"; };
 		65DC012A27C202ED005D3B87 /* UDKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDKey.swift; sourceTree = "<group>"; };
 		65DC012D27C2107A005D3B87 /* Texts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Texts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,7 +126,7 @@
 		65272FCA27C26A230013079E /* System */ = {
 			isa = PBXGroup;
 			children = (
-				65272FCB27C26A940013079E /* SystemSettingView.swift */,
+				65272FCB27C26A940013079E /* SystemSetting.swift */,
 			);
 			path = System;
 			sourceTree = "<group>";
@@ -226,6 +226,7 @@
 			children = (
 				65DC012227C09F7A005D3B87 /* Font */,
 				65DC012327C09F95005D3B87 /* Text */,
+				65AB672727DC2A2500FA96A8 /* System */,
 				65DC012C27C208C8005D3B87 /* UserDefaults */,
 			);
 			path = Model;
@@ -245,7 +246,7 @@
 		6560498027BBEC890037C20B /* Text */ = {
 			isa = PBXGroup;
 			children = (
-				6560496527B2C3450037C20B /* MirroredTextView.swift */,
+				6560496527B2C3450037C20B /* ReflectedText.swift */,
 				6560496727B2C5530037C20B /* TextEditorView.swift */,
 			);
 			path = Text;
@@ -282,7 +283,7 @@
 		6560498627BBEF880037C20B /* Keyboard */ = {
 			isa = PBXGroup;
 			children = (
-				6560497E27B5633C0037C20B /* ShowKeyboardButton.swift */,
+				6560497E27B5633C0037C20B /* KeyboardButton.swift */,
 			);
 			path = Keyboard;
 			sourceTree = "<group>";
@@ -290,8 +291,7 @@
 		6560498727BBF0130037C20B /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				6560497427B3FCB70037C20B /* SettingButtonWithSheet.swift */,
-				6560498A27BBF04C0037C20B /* SettingButtonWithPopover.swift */,
+				6560497427B3FCB70037C20B /* SettingButton.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -299,7 +299,7 @@
 		6560498827BBF01E0037C20B /* Clear */ = {
 			isa = PBXGroup;
 			children = (
-				6560497027B3FB490037C20B /* ClearTextButton.swift */,
+				6560497027B3FB490037C20B /* ClearButton.swift */,
 			);
 			path = Clear;
 			sourceTree = "<group>";
@@ -307,9 +307,17 @@
 		6560499227BFE55C0037C20B /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				6560499327BFE56E0037C20B /* FontSettingView.swift */,
+				6560499327BFE56E0037C20B /* FontSetting.swift */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		65AB672727DC2A2500FA96A8 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				65AB672827DC2A3F00FA96A8 /* Systems.swift */,
+			);
+			name = System;
 			sourceTree = "<group>";
 		};
 		65DC012227C09F7A005D3B87 /* Font */ = {
@@ -334,7 +342,7 @@
 		65DC012727C1D37F005D3B87 /* Text */ = {
 			isa = PBXGroup;
 			children = (
-				65DC012827C1D3CD005D3B87 /* TextSettingView.swift */,
+				65DC012827C1D3CD005D3B87 /* TextSetting.swift */,
 			);
 			path = Text;
 			sourceTree = "<group>";
@@ -485,24 +493,24 @@
 				6560496827B2C5530037C20B /* TextEditorView.swift in Sources */,
 				65DC012527C09FDB005D3B87 /* TextAlignments.swift in Sources */,
 				65DC012E27C2107A005D3B87 /* Texts.swift in Sources */,
-				65272FCC27C26A940013079E /* SystemSettingView.swift in Sources */,
-				6560498B27BBF04C0037C20B /* SettingButtonWithPopover.swift in Sources */,
-				6560496627B2C3450037C20B /* MirroredTextView.swift in Sources */,
+				65272FCC27C26A940013079E /* SystemSetting.swift in Sources */,
+				6560496627B2C3450037C20B /* ReflectedText.swift in Sources */,
 				6560493227AC1E280037C20B /* ContentView.swift in Sources */,
-				6560499427BFE56E0037C20B /* FontSettingView.swift in Sources */,
+				6560499427BFE56E0037C20B /* FontSetting.swift in Sources */,
 				6560498F27BFE0500037C20B /* FontWeight.swift in Sources */,
 				6560497327B3FBDA0037C20B /* ShareButtonWithPopover.swift in Sources */,
 				6560496027B2B8600037C20B /* MirrorTalkView.swift in Sources */,
-				6560497F27B5633C0037C20B /* ShowKeyboardButton.swift in Sources */,
+				6560497F27B5633C0037C20B /* KeyboardButton.swift in Sources */,
 				6560498327BBECC90037C20B /* SettingView.swift in Sources */,
 				6560497B27B55C4D0037C20B /* ShareButtonWithSheet.swift in Sources */,
-				65DC012927C1D3CD005D3B87 /* TextSettingView.swift in Sources */,
+				65DC012927C1D3CD005D3B87 /* TextSetting.swift in Sources */,
+				65AB672927DC2A3F00FA96A8 /* Systems.swift in Sources */,
 				6560493027AC1E280037C20B /* Mirror_TalkApp.swift in Sources */,
 				6560498D27BFDF970037C20B /* FontDesign.swift in Sources */,
-				6560497527B3FCB70037C20B /* SettingButtonWithSheet.swift in Sources */,
+				6560497527B3FCB70037C20B /* SettingButton.swift in Sources */,
 				6560495E27B2B8340037C20B /* MirrorTalkViewModel.swift in Sources */,
 				6560497D27B55F8F0037C20B /* ShareActivityView.swift in Sources */,
-				6560497127B3FB490037C20B /* ClearTextButton.swift in Sources */,
+				6560497127B3FB490037C20B /* ClearButton.swift in Sources */,
 				65DC012B27C202ED005D3B87 /* UDKey.swift in Sources */,
 				6560499127BFE0D80037C20B /* Fonts.swift in Sources */,
 			);

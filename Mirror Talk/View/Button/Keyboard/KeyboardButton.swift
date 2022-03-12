@@ -2,7 +2,10 @@
 
 import SwiftUI
 
-struct ShowKeyboardButton: View {
+///
+/// Show and hide the system keyboard.
+///
+struct KeyboardButton: View {
     @FocusState var isFocused: Bool
     
     var body: some View {
