@@ -2,7 +2,10 @@
 
 import SwiftUI
 
-struct MirroredTextView: View {
+///
+/// The reflected text message in the upper half of the screen.
+///
+struct ReflectedText: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     
     var body: some View {
@@ -27,6 +30,9 @@ struct MirroredTextView: View {
         .rotationEffect(.degrees(180))
     }
     
+    ///
+    /// Convert the view model's TextAlignment type value.
+    ///
     var alignment: Alignment {
         switch viewModel.texts.alignment {
         case .leading:

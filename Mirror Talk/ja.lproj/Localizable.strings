@@ -4,11 +4,12 @@
 "Setting" = "設定";
 "Done" = "完了";
 
+// MARK: - Header
 "Font" = "フォント";
 "Text" = "テキスト";
 "System" = "システム";
 
-// MARK: - Font
+// MARK: - Font Weight
 "Weight" = "太さ";
 "ultraLight" = "ウルトラライト";
 "thin" = "シン";
@@ -20,6 +21,7 @@
 "heavy" = "ヘビー";
 "black" = "ブラック";
 
+// MARK: - Font Design
 "Design" = "書体";
 "default" = "デフォルト";
 "monospaced" = "等幅";

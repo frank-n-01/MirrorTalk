@@ -2,7 +2,10 @@
 
 import SwiftUI
 
-struct SettingButtonWithSheet: View {
+///
+/// Show the setting modal view in a sheet.
+///
+struct SettingButton: View {
     @State private var show = false
     @ObservedObject var viewModel: MirrorTalkViewModel
     @FocusState var isFocused: Bool
@@ -10,6 +13,7 @@ struct SettingButtonWithSheet: View {
     var body: some View {
         Button {
             show.toggle()
+            
             // Hide the keyboard.
             isFocused = false
         } label: {

@@ -4,11 +4,12 @@
 "Setting" = "Setting";
 "Done" = "Done";
 
+// MARK: - Header
 "Font" = "Font";
 "Text" = "Text";
 "System" = "System";
 
-// MARK: - Font
+// MARK: - Font Weight
 "Weight" = "Weight";
 "ultraLight" = "ultraLight";
 "thin" = "thin";
@@ -20,6 +21,7 @@
 "heavy" = "heavy";
 "black" = "black";
 
+// MARK: - Font Design
 "Design" = "Design";
 "default" = "default";
 "monospaced" = "monospaced";

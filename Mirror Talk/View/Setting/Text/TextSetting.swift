@@ -2,7 +2,10 @@
 
 import SwiftUI
 
-struct TextSettingView: View {
+///
+/// The setting view for text format and editing.
+///
+struct TextSetting: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     
     var body: some View {
@@ -15,8 +18,10 @@ struct TextSettingView: View {
             }
             .pickerStyle(.segmented)
 
-            Toggle("Auto Correction", isOn: $viewModel.texts.isAutocorrectionEnabled)
-                .font(.title3)
+            Toggle(
+                "Auto Correction",
+                isOn: $viewModel.texts.isAutocorrectionEnabled
+            ).font(.title3)
         } header: {
             Text("Text")
         }

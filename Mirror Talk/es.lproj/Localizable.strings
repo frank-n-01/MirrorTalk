@@ -4,11 +4,12 @@
 "Setting" = "Ajuste";
 "Done" = "OK";
 
+// MARK: - Header
 "Font" = "Fuente";
 "Text" = "Texto";
 "System" = "Sistema";
 
-// MARK: - Font
+// MARK: - Font Weight
 "Weight" = "Peso";
 "ultraLight" = "ultraligero";
 "thin" = "delgado";
@@ -20,6 +21,7 @@
 "heavy" = "pesado";
 "black" = "negro";
 
+// MARK: - Font Design
 "Design" = "Diseño";
 "default" = "defecto";
 "monospaced" = "monoespaciado";

@@ -2,6 +2,9 @@
 
 import SwiftUI
 
+///
+/// The setting modal view presented in a sheet.
+///
 struct SettingView: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     @Binding var show: Bool
@@ -9,9 +12,9 @@ struct SettingView: View {
     var body: some View {
         NavigationView {
             Form {
-                FontSettingView(viewModel: viewModel)
-                TextSettingView(viewModel: viewModel)
-                SystemSettingView(viewModel: viewModel)
+                FontSetting(viewModel: viewModel)
+                TextSetting(viewModel: viewModel)
+                SystemSetting(viewModel: viewModel)
             }
             .navigationTitle("Setting")
             .navigationBarTitleDisplayMode(.inline)
@@ -23,7 +26,9 @@ struct SettingView: View {
         }
     }
     
+    ///
     /// Dismiss the setting view.
+    /// 
     var doneButton: some View {
         Button {
             show = false

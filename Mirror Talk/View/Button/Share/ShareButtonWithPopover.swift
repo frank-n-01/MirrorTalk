@@ -2,6 +2,9 @@
 
 import SwiftUI
 
+///
+/// Show the activity view with a popover for iPad.
+/// 
 struct ShareButtonWithPopover: View {
     @State private var show = false
     @Binding var message: String
@@ -10,6 +13,7 @@ struct ShareButtonWithPopover: View {
     var body: some View {
         Button {
             show.toggle()
+            
             // Hide the keyboard.
             isFocused = false
         } label: {

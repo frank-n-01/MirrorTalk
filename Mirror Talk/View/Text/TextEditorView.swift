@@ -2,6 +2,9 @@
 
 import SwiftUI
 
+///
+/// The text editor in the bottom half of the screen.
+///
 struct TextEditorView: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     @FocusState var isFocused: Bool
@@ -12,10 +15,9 @@ struct TextEditorView: View {
             .font(.system(size: viewModel.fonts.size,
                           weight: viewModel.fonts.weight.value,
                           design: viewModel.fonts.design.value))
-            .keyboardType(.default)
             .multilineTextAlignment(viewModel.texts.alignment.value)
             .disableAutocorrection(!viewModel.texts.isAutocorrectionEnabled)
-            .padding()
             .padding(.top, -10.0)
+            .padding()
     }
 }
