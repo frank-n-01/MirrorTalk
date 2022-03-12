@@ -45,19 +45,15 @@ struct Systems {
     /// Initialize properties with the User Defaults values.
     ///
     init() {
-        self.hideStatusBar = UserDefaults.standard.bool(
-            forKey: UDKey.hideStatusBar.rawValue
-        )
-        
-        self.isSingleMode = UserDefaults.standard.bool(
-            forKey: UDKey.isSingleMode.rawValue
-        )
-        
-        let isInitialized = UserDefaults.standard.bool(
-            forKey: UDKey.isInitialized.rawValue
-        )
-        
-        if !isInitialized {
+        if MirrorTalkViewModel.isInitialized {
+            self.hideStatusBar = UserDefaults.standard.bool(
+                forKey: UDKey.hideStatusBar.rawValue
+            )
+            
+            self.isSingleMode = UserDefaults.standard.bool(
+                forKey: UDKey.isSingleMode.rawValue
+            )
+        } else {
             self.hideStatusBar = Self.HIDE_STATUS_BAR
             self.isSingleMode = Self.IS_SINGLE_MODE
         }
