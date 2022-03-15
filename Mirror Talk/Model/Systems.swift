@@ -56,6 +56,15 @@ struct Systems {
         } else {
             self.hideStatusBar = Self.HIDE_STATUS_BAR
             self.isSingleMode = Self.IS_SINGLE_MODE
+            
+            UserDefaults.standard.set(
+                Self.HIDE_STATUS_BAR,
+                forKey: UDKey.hideStatusBar.rawValue
+            )
+            UserDefaults.standard.set(
+                Self.IS_SINGLE_MODE,
+                forKey: UDKey.isSingleMode.rawValue
+            )
         }
     }
 }

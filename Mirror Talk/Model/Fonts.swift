@@ -61,7 +61,7 @@ struct Fonts {
     ///
     /// The range of editable font size.
     ///
-    static let SIZE_RANGE: ClosedRange<CGFloat> = 10...300
+    static let SIZE_RANGE: ClosedRange<CGFloat> = 10...1000
     
     ///
     /// Initialize properties with the User Defaults values.
@@ -93,6 +93,19 @@ struct Fonts {
             self.size = Self.SIZE
             self.weight = Self.WEIGHT
             self.design = Self.DESIGN
+            
+            UserDefaults.standard.set(
+                Self.SIZE,
+                forKey: UDKey.fontSize.rawValue
+            )
+            UserDefaults.standard.set(
+                Self.WEIGHT.rawValue,
+                forKey: UDKey.fontWeight.rawValue
+            )
+            UserDefaults.standard.set(
+                Self.DESIGN.rawValue,
+                forKey: UDKey.fontDesign.rawValue
+            )
         }
     }
 }

@@ -58,6 +58,15 @@ struct Texts {
         } else {
             self.alignment = Self.ALIGNMENT
             self.isAutocorrectionEnabled = Self.IS_AUTOCORRECTION_ENABLED
+            
+            UserDefaults.standard.set(
+                Self.ALIGNMENT.rawValue,
+                forKey: UDKey.textAlignment.rawValue
+            )
+            UserDefaults.standard.set(
+                Self.IS_AUTOCORRECTION_ENABLED,
+                forKey: UDKey.isAutocorrectionEnabed.rawValue
+            )
         }
     }
 }
