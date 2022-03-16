@@ -59,6 +59,7 @@ struct Texts {
             self.alignment = Self.ALIGNMENT
             self.isAutocorrectionEnabled = Self.IS_AUTOCORRECTION_ENABLED
             
+            // Save the default values.
             UserDefaults.standard.set(
                 Self.ALIGNMENT.rawValue,
                 forKey: UDKey.textAlignment.rawValue

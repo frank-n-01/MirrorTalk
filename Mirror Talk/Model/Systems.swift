@@ -57,6 +57,7 @@ struct Systems {
             self.hideStatusBar = Self.HIDE_STATUS_BAR
             self.isSingleMode = Self.IS_SINGLE_MODE
             
+            // Save the default values.
             UserDefaults.standard.set(
                 Self.HIDE_STATUS_BAR,
                 forKey: UDKey.hideStatusBar.rawValue

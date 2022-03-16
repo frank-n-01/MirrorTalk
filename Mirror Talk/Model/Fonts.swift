@@ -94,6 +94,7 @@ struct Fonts {
             self.weight = Self.WEIGHT
             self.design = Self.DESIGN
             
+            // Save the default values.
             UserDefaults.standard.set(
                 Self.SIZE,
                 forKey: UDKey.fontSize.rawValue

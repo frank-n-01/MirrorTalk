@@ -36,6 +36,7 @@ class MirrorTalkViewModel: ObservableObject {
     
     ///
     /// Is the User Defaults values initialized.
+    /// 
     static var isInitialized: Bool {
         UserDefaults.standard.bool(
             forKey: UDKey.isInitialized.rawValue
