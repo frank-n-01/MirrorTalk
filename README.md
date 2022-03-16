@@ -6,7 +6,7 @@ Support your face-to-face writing communication: reflect your message so the per
 
 When you want to quickly communicate with someone in front of you by writing but don’t have a sheet of paper and a pencil, you can type and show your message right away.
 
-It’s simple, clear, and easy to use. You can control the text style, share your message, and switch different display modes. Moreover, it’s totally free with no advertisements and your data are not collected.
+It’s simple, clear, and easy to use. You can control the text style, share your message, and switch different display modes. Moreover, it’s totally free without advertisements so nothing will disturb your experience.
 
 ## Writing
 Write your message in the bottom half of the screen and it will be reflected in the upper half. Tap the "X" button to clear it.
@@ -20,18 +20,20 @@ You can share your text message by tapping the Action button.
 ## Settings
 You can change the settings below:
 
-- Font
-    - Size
-    - Weight
-    - Design
-- Text Alignment
-    - Left
-    - Center
-    - Right 
-- Switch
-    - Auto-correction
-    - Single Mode
-    - Hide Status Bar
+### Font
+- Size
+- Weight
+- Design
+    
+### Text Alignment
+- Left
+- Center
+- Right 
+ 
+### Switch
+- Auto-correction
+- Single Mode
+- Hide Status Bar
 
 ## Single Mode
 You can hide the reflected text by enabling Single mode: this mode is suitable when you want to show the message to the person next to you and communicate with him/her side by side.
