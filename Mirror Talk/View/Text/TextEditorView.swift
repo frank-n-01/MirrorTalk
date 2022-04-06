@@ -2,9 +2,6 @@
 
 import SwiftUI
 
-///
-/// The text editor in the bottom half of the screen.
-///
 struct TextEditorView: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     @FocusState var isFocused: Bool

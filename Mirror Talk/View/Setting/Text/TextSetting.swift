@@ -2,9 +2,6 @@
 
 import SwiftUI
 
-///
-/// The setting view for text format and editing.
-///
 struct TextSetting: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     
@@ -21,7 +18,8 @@ struct TextSetting: View {
             Toggle(
                 "Auto Correction",
                 isOn: $viewModel.texts.isAutocorrectionEnabled
-            ).font(.title3)
+            )
+            .font(.title3)
         } header: {
             Text("Text")
         }

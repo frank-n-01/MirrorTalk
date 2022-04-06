@@ -2,9 +2,6 @@
 
 import SwiftUI
 
-///
-/// The text alignment property.
-///
 enum TextAlignments :Int, CaseIterable, Identifiable {
     case leading
     case center
@@ -13,10 +10,7 @@ enum TextAlignments :Int, CaseIterable, Identifiable {
     var id: UUID {
         return UUID()
     }
-        
-    ///
-    /// The system image name for each alignment.
-    /// 
+
     var image: String {
         switch self {
         case .leading:
@@ -28,9 +22,6 @@ enum TextAlignments :Int, CaseIterable, Identifiable {
         }
     }
     
-    ///
-    /// The text alignment value to used in the view modifier.
-    ///
     var value: TextAlignment {
         switch self {
         case .leading:

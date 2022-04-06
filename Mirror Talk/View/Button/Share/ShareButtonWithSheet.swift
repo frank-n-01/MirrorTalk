@@ -2,9 +2,7 @@
 
 import SwiftUI
 
-///
 /// Show the activity view with a sheet for iPhone and others.
-///
 struct ShareButtonWithSheet: View {
     @State private var show = false
     @Binding var message: String

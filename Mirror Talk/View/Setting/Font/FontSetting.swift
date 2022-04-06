@@ -2,9 +2,6 @@
 
 import SwiftUI
 
-///
-/// The setting view for font size, weight, and design.
-///
 struct FontSetting: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     
@@ -17,10 +14,7 @@ struct FontSetting: View {
             Text("Font")
         }
     }
-    
-    ///
-    /// The stepper to increment and decrement the font size.
-    ///
+
     var sizeStepper: some View {
         Stepper(
             value: $viewModel.fonts.size,
@@ -33,10 +27,7 @@ struct FontSetting: View {
             ).font(.title3)
         }
     }
-    
-    ///
-    /// The picker to select a font weight.
-    ///
+
     var weightPicker: some View {
         Picker(selection: $viewModel.fonts.weight) {
             ForEach(FontWeight.allCases) { weight in
@@ -51,9 +42,6 @@ struct FontSetting: View {
         }
     }
     
-    ///
-    /// The picker to select a font design.
-    /// 
     var designPicker: some View {
         Picker(selection: $viewModel.fonts.design) {
             ForEach(FontDesign.allCases) { design in

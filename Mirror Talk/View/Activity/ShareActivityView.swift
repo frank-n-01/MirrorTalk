@@ -2,19 +2,12 @@
 
 import SwiftUI
 
-///
-/// Show the system provided share activity view.
-///
 struct ShareActivityView: UIViewControllerRepresentable {
     
-    ///
     /// The collection of items to be shared.
-    ///
     let items: [Any]
     
-    ///
     /// Custom activities that will be added to the share sheet.
-    ///
     let activities: [UIActivity]?
     
     init(_ items: [Any], _ activities: [UIActivity]? = nil) {
@@ -22,9 +15,7 @@ struct ShareActivityView: UIViewControllerRepresentable {
         self.activities = activities
     }
     
-    ///
     /// Return a new view controller for the activity view.
-    ///
     func makeUIViewController(
         context: UIViewControllerRepresentableContext<ShareActivityView>
     ) -> UIActivityViewController {

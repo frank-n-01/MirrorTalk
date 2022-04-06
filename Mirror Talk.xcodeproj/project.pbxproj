@@ -90,6 +90,7 @@
 		6560498E27BFE0500037C20B /* FontWeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontWeight.swift; sourceTree = "<group>"; };
 		6560499027BFE0D80037C20B /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		6560499327BFE56E0037C20B /* FontSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontSetting.swift; sourceTree = "<group>"; };
+		656BE17927FDD94B00B32BA6 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
 		65AB672827DC2A3F00FA96A8 /* Systems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Systems.swift; sourceTree = "<group>"; };
 		65DC012427C09FDB005D3B87 /* TextAlignments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlignments.swift; sourceTree = "<group>"; };
 		65DC012827C1D3CD005D3B87 /* TextSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSetting.swift; sourceTree = "<group>"; };
@@ -445,6 +446,7 @@
 				"zh-Hans",
 				"zh-Hant",
 				es,
+				cs,
 			);
 			mainGroup = 6560492327AC1E280037C20B;
 			productRefGroup = 6560492D27AC1E280037C20B /* Products */;
@@ -557,6 +559,7 @@
 				65272FD327C2725E0013079E /* zh-Hant */,
 				65272FD427C2725F0013079E /* ja */,
 				65272FD527C2725F0013079E /* es */,
+				656BE17927FDD94B00B32BA6 /* cs */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";

@@ -2,14 +2,8 @@
 
 import SwiftUI
 
-///
-/// The text format and editing properties.
-///
 struct Texts {
-    
-    ///
-    /// The text alignment property automatically saved in User Defaults.
-    ///
+
     var alignment: TextAlignments {
         didSet {
             UserDefaults.standard.set(
@@ -18,10 +12,7 @@ struct Texts {
             )
         }
     }
-    
-    ///
-    /// The ON / OFF of the auto-correction function automatically saved in User Defaults.
-    ///
+
     var isAutocorrectionEnabled: Bool {
         didSet {
             UserDefaults.standard.set(
@@ -30,44 +21,26 @@ struct Texts {
             )
         }
     }
-    
-    ///
-    /// The default text alignment selection.
-    ///
+
     static let ALIGNMENT: TextAlignments = .leading
-    
-    ///
-    /// The default ON / OFF of the auto-correction function.
-    /// 
     static let IS_AUTOCORRECTION_ENABLED: Bool = true
-    
-    ///
-    /// Initialize properties with the User Defaults values.
-    ///
+
     init() {
         if MirrorTalkViewModel.isInitialized {
-            self.alignment = TextAlignments(
-                rawValue: UserDefaults.standard.integer(
-                    forKey: UDKey.textAlignment.rawValue
-                )
-            ) ?? Self.ALIGNMENT
+            self.alignment = TextAlignments(rawValue: UserDefaults.standard
+                .integer(forKey: UDKey.textAlignment.rawValue)) ?? Self.ALIGNMENT
             
-            self.isAutocorrectionEnabled = UserDefaults.standard.bool(
-                forKey: UDKey.isAutocorrectionEnabed.rawValue
-            )
+            self.isAutocorrectionEnabled = UserDefaults.standard
+                .bool(forKey: UDKey.isAutocorrectionEnabed.rawValue)
         } else {
             self.alignment = Self.ALIGNMENT
             self.isAutocorrectionEnabled = Self.IS_AUTOCORRECTION_ENABLED
             
             // Save the default values.
-            UserDefaults.standard.set(
-                Self.ALIGNMENT.rawValue,
-                forKey: UDKey.textAlignment.rawValue
-            )
-            UserDefaults.standard.set(
-                Self.IS_AUTOCORRECTION_ENABLED,
-                forKey: UDKey.isAutocorrectionEnabed.rawValue
-            )
+            UserDefaults.standard.set(Self.ALIGNMENT.rawValue,
+                                      forKey: UDKey.textAlignment.rawValue)
+            UserDefaults.standard.set(Self.IS_AUTOCORRECTION_ENABLED,
+                                      forKey: UDKey.isAutocorrectionEnabed.rawValue)
         }
     }
 }

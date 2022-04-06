@@ -1,0 +1,36 @@
+// Copyright © 2022 Ni Fu. All rights reserved.
+
+// MARK: - Setting
+"Setting" = "Nastavení";
+"Done" = "Hotovo";
+
+// MARK: - Header
+"Font" = "Písmo";
+"Text" = "Text";
+"System" = "Systém";
+
+// MARK: - Font Weight
+"Weight" = "Hmotnost";
+"ultraLight" = "ultralehký";
+"thin" = "tenký";
+"light" = "světlo";
+"regular" = "pravidelný";
+"medium" = "střední";
+"semibold" = "polotučný";
+"bold" = "tučně";
+"heavy" = "těžký";
+"black" = "Černá";
+
+// MARK: - Font Design
+"Design" = "Design";
+"default" = "výchozí";
+"monospaced" = "jednoprostorový";
+"rounded" = "zaoblený";
+"serif" = "patka";
+
+// MARK: - Text
+"Auto Correction" = "Automatická oprava";
+
+// MARK: - System
+"Hide Status Bar" = "Skrýt stavový řádek";
+"Single Mode" = "Jediný režim";
