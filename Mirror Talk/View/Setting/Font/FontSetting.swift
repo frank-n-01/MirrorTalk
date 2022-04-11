@@ -21,10 +21,8 @@ struct FontSetting: View {
             in: Fonts.SIZE_RANGE,
             step: 2.0
         ) {
-            Label(
-                "\(Int(viewModel.fonts.size)) pt",
-                systemImage: "textformat.size"
-            ).font(.title3)
+            Label("\(Int(viewModel.fonts.size)) pt", systemImage: "textformat.size")
+                .font(CommonStyle.LABEL_FONT)
         }
     }
 
@@ -38,7 +36,7 @@ struct FontSetting: View {
             }
         } label: {
             Text("Weight")
-                .font(.title3)
+                .font(CommonStyle.LABEL_FONT)
         }
     }
     
@@ -52,7 +50,7 @@ struct FontSetting: View {
             }
         } label: {
             Text("Design")
-                .font(.title3)
+                .font(CommonStyle.LABEL_FONT)
         }
     }
 }

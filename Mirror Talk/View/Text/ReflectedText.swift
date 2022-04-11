@@ -17,11 +17,9 @@ struct ReflectedText: View {
                     .padding()
                     .padding(.horizontal, 5.0)
                     .padding(.top, -5.0)
-                    .frame(
-                        maxWidth: .infinity,
-                        maxHeight: .infinity,
-                        alignment: alignment
-                    )
+                    .frame(maxWidth: .infinity,
+                           maxHeight: .infinity,
+                           alignment: alignment)
             }
         }
         .rotationEffect(.degrees(180))

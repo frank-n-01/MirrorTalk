@@ -7,18 +7,11 @@ struct SystemSetting: View {
     
     var body: some View {
         Section {
-            Toggle(
-                "Single Mode",
-                isOn: $viewModel.system.isSingleMode
-            )
-            .font(.title3)
+            Toggle("Single Mode", isOn: $viewModel.system.isSingleMode)
+                .font(CommonStyle.LABEL_FONT)
             
-            Toggle(
-                "Hide Status Bar",
-                isOn: $viewModel.system.hideStatusBar
-            )
-            .font(.title3)
-            
+            Toggle("Hide Status Bar", isOn: $viewModel.system.hideStatusBar)
+                .font(CommonStyle.LABEL_FONT)
         } header: {
             Text("System")
         }

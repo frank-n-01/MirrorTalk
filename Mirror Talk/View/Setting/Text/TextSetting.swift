@@ -15,11 +15,8 @@ struct TextSetting: View {
             }
             .pickerStyle(.segmented)
 
-            Toggle(
-                "Auto Correction",
-                isOn: $viewModel.texts.isAutocorrectionEnabled
-            )
-            .font(.title3)
+            Toggle("Auto Correction", isOn: $viewModel.texts.isAutocorrectionEnabled)
+                .font(CommonStyle.LABEL_FONT)
         } header: {
             Text("Text")
         }

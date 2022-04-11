@@ -19,15 +19,12 @@ struct ShareActivityView: UIViewControllerRepresentable {
     func makeUIViewController(
         context: UIViewControllerRepresentableContext<ShareActivityView>
     ) -> UIActivityViewController {
-        return UIActivityViewController(
-            activityItems: items,
-            applicationActivities: activities
-        )
+        UIActivityViewController(activityItems: items,
+                                 applicationActivities: activities)
     }
     
     /// Required but do nothing.
     func updateUIViewController(
         _ uiViewController: UIActivityViewController,
-        context: UIViewControllerRepresentableContext<ShareActivityView>
-    ) {}
+        context: UIViewControllerRepresentableContext<ShareActivityView>) {}
 }

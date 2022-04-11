@@ -19,7 +19,6 @@ struct MirrorTalkView: View {
                 ToolbarItemGroup(placement: .bottomBar) {
                     toolbarButtons
                 }
-                
                 ToolbarItemGroup(placement: .keyboard) {
                     Spacer()
                     toolbarButtons
@@ -43,19 +42,17 @@ struct MirrorTalkView: View {
     }
 
     var isPad: Bool {
-        return UIDevice().userInterfaceIdiom == .pad
+        UIDevice().userInterfaceIdiom == .pad
     }
 
     var shareButton: some View {
         Group {
             if isPad {
                 ShareButtonWithPopover(
-                    message: $viewModel.message, isFocused: _isFocused
-                )
+                    message: $viewModel.message, isFocused: _isFocused)
             } else {
                 ShareButtonWithSheet(
-                    message: $viewModel.message, isFocused: _isFocused
-                )
+                    message: $viewModel.message, isFocused: _isFocused)
             }
         }
     }

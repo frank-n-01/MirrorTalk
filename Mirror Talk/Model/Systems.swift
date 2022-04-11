@@ -6,19 +6,15 @@ struct Systems {
 
     var hideStatusBar: Bool {
         didSet {
-            UserDefaults.standard.set(
-                hideStatusBar,
-                forKey: UDKey.hideStatusBar.rawValue
-            )
+            UserDefaults.standard.set(hideStatusBar,
+                                      forKey: UDKey.hideStatusBar.rawValue)
         }
     }
 
     var isSingleMode: Bool {
         didSet {
-            UserDefaults.standard.set(
-                isSingleMode,
-                forKey: UDKey.isSingleMode.rawValue
-            )
+            UserDefaults.standard.set(isSingleMode,
+                                      forKey: UDKey.isSingleMode.rawValue)
         }
     }
 
@@ -27,11 +23,11 @@ struct Systems {
 
     init() {
         if MirrorTalkViewModel.isInitialized {
-            self.hideStatusBar = UserDefaults.standard
-                .bool(forKey: UDKey.hideStatusBar.rawValue)
+            self.hideStatusBar = UserDefaults.standard.bool(
+                forKey: UDKey.hideStatusBar.rawValue)
             
-            self.isSingleMode = UserDefaults.standard
-                .bool(forKey: UDKey.isSingleMode.rawValue)
+            self.isSingleMode = UserDefaults.standard.bool(
+                forKey: UDKey.isSingleMode.rawValue)
         } else {
             self.hideStatusBar = Self.HIDE_STATUS_BAR
             self.isSingleMode = Self.IS_SINGLE_MODE

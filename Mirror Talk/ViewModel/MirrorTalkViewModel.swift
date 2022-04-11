@@ -3,13 +3,10 @@
 import SwiftUI
 
 class MirrorTalkViewModel: ObservableObject {
-    
     @Published var message: String {
         didSet {
             UserDefaults.standard.set(
-                message,
-                forKey: UDKey.message.rawValue
-            )
+                message, forKey: UDKey.message.rawValue)
         }
     }
     
@@ -21,14 +18,12 @@ class MirrorTalkViewModel: ObservableObject {
     
     static var isInitialized: Bool {
         UserDefaults.standard.bool(
-            forKey: UDKey.isInitialized.rawValue
-        )
+            forKey: UDKey.isInitialized.rawValue)
     }
     
     init() {
         self.message = UserDefaults.standard.string(
-            forKey: UDKey.message.rawValue
-        ) ?? ""
+            forKey: UDKey.message.rawValue) ?? ""
         
         self.fonts = Fonts()
         self.texts = Texts()
