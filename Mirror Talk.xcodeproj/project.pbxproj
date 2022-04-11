@@ -96,6 +96,7 @@
 		656BE17C280459FA00B32BA6 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		656BE17D2804605100B32BA6 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		656BE17E2804640500B32BA6 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		656BE17F280468F900B32BA6 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		65AB672827DC2A3F00FA96A8 /* Systems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Systems.swift; sourceTree = "<group>"; };
 		65DC012427C09FDB005D3B87 /* TextAlignments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlignments.swift; sourceTree = "<group>"; };
 		65DC012827C1D3CD005D3B87 /* TextSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSetting.swift; sourceTree = "<group>"; };
@@ -457,6 +458,7 @@
 				de,
 				ko,
 				"pt-PT",
+				tr,
 			);
 			mainGroup = 6560492327AC1E280037C20B;
 			productRefGroup = 6560492D27AC1E280037C20B /* Products */;
@@ -575,6 +577,7 @@
 				656BE17C280459FA00B32BA6 /* de */,
 				656BE17D2804605100B32BA6 /* ko */,
 				656BE17E2804640500B32BA6 /* pt-PT */,
+				656BE17F280468F900B32BA6 /* tr */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
