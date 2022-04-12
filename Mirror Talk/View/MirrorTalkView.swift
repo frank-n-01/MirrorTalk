@@ -2,9 +2,6 @@
 
 import SwiftUI
 
-///
-/// The main view of texts and tool bar buttons.
-///
 struct MirrorTalkView: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     @FocusState private var isFocused: Bool
@@ -22,7 +19,6 @@ struct MirrorTalkView: View {
                 ToolbarItemGroup(placement: .bottomBar) {
                     toolbarButtons
                 }
-                
                 ToolbarItemGroup(placement: .keyboard) {
                     Spacer()
                     toolbarButtons
@@ -32,10 +28,7 @@ struct MirrorTalkView: View {
             .statusBar(hidden: viewModel.system.hideStatusBar)
         }
     }
-    
-    ///
-    /// The four buttons in the tool bar.
-    ///
+
     var toolbarButtons: some View {
         Group {
             shareButton
@@ -47,27 +40,19 @@ struct MirrorTalkView: View {
             SettingButton(viewModel: viewModel, isFocused: _isFocused)
         }
     }
-    
-    ///
-    /// Whether the type of current device is iPad.
-    ///
+
     var isPad: Bool {
-        return UIDevice().userInterfaceIdiom == .pad
+        UIDevice().userInterfaceIdiom == .pad
     }
-    
-    ///
-    /// Share the message using the system provided activities.
-    ///
+
     var shareButton: some View {
         Group {
             if isPad {
                 ShareButtonWithPopover(
-                    message: $viewModel.message, isFocused: _isFocused
-                )
+                    message: $viewModel.message, isFocused: _isFocused)
             } else {
                 ShareButtonWithSheet(
-                    message: $viewModel.message, isFocused: _isFocused
-                )
+                    message: $viewModel.message, isFocused: _isFocused)
             }
         }
     }

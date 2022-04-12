@@ -2,9 +2,7 @@
 
 import SwiftUI
 
-///
 /// Show the activity view with a popover for iPad.
-/// 
 struct ShareButtonWithPopover: View {
     @State private var show = false
     @Binding var message: String

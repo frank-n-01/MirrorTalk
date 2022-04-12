@@ -1,0 +1,36 @@
+// Copyright © 2022 Ni Fu. All rights reserved.
+
+// MARK: - Setting
+"Setting" = "Ayarlar";
+"Done" = "Bitti";
+
+// MARK: - Header
+"Font" = "Yazı tipi";
+"Text" = "Metin";
+"System" = "sistem";
+
+// MARK: - Font Weight
+"Weight" = "Ağırlık";
+"ultraLight" = "ultra hafif";
+"thin" = "ince";
+"light" = "hafif";
+"regular" = "normal";
+"medium" = "orta";
+"semibold" = "yarı kalın";
+"bold" = "kalın";
+"heavy" = "ağır";
+"black" = "siyah";
+
+// MARK: - Font Design
+"Design" = "Tasarım";
+"default" = "varsayılan";
+"monospaced" = "tek aralıklı";
+"rounded" = "yuvarlak";
+"serif" = "serif";
+
+// MARK: - Text
+"Auto Correction" = "Otomatik düzeltme";
+
+// MARK: - System
+"Hide Status Bar" = "Durum çubuğunu gizle";
+"Single Mode" = "Tek mod";

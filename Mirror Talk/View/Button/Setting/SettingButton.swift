@@ -2,9 +2,7 @@
 
 import SwiftUI
 
-///
 /// Show the setting modal view in a sheet.
-///
 struct SettingButton: View {
     @State private var show = false
     @ObservedObject var viewModel: MirrorTalkViewModel

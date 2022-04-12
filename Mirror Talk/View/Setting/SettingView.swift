@@ -2,9 +2,6 @@
 
 import SwiftUI
 
-///
-/// The setting modal view presented in a sheet.
-///
 struct SettingView: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     @Binding var show: Bool
@@ -20,21 +17,14 @@ struct SettingView: View {
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    doneButton
+                    Button {
+                        show = false
+                    } label: {
+                        Text("Done")
+                            .bold()
+                    }
                 }
             }
-        }
-    }
-    
-    ///
-    /// Dismiss the setting view.
-    /// 
-    var doneButton: some View {
-        Button {
-            show = false
-        } label: {
-            Text("Done")
-                .bold()
         }
     }
 }

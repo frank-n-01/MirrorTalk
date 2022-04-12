@@ -2,9 +2,6 @@
 
 import SwiftUI
 
-///
-/// The reflected text message in the upper half of the screen.
-///
 struct ReflectedText: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     
@@ -20,19 +17,14 @@ struct ReflectedText: View {
                     .padding()
                     .padding(.horizontal, 5.0)
                     .padding(.top, -5.0)
-                    .frame(
-                        maxWidth: .infinity,
-                        maxHeight: .infinity,
-                        alignment: alignment
-                    )
+                    .frame(maxWidth: .infinity,
+                           maxHeight: .infinity,
+                           alignment: alignment)
             }
         }
         .rotationEffect(.degrees(180))
     }
-    
-    ///
-    /// Convert the view model's TextAlignment type value.
-    ///
+
     var alignment: Alignment {
         switch viewModel.texts.alignment {
         case .leading:

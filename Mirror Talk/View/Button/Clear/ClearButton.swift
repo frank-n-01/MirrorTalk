@@ -2,9 +2,7 @@
 
 import SwiftUI
 
-///
 /// Clear the text message.
-///
 struct ClearButton: View {
     var clear: () -> Void
     

@@ -1,0 +1,36 @@
+// Copyright © 2022 Ni Fu. All rights reserved.
+
+// MARK: - Setting
+"Setting" = "설정";
+"Done" = "완료";
+
+// MARK: - Header
+"Font" = "폰트";
+"Text" = "텍스트";
+"System" = "체계";
+
+// MARK: - Font Weight
+"Weight" = "두께";
+"ultraLight" = "초경량";
+"thin" = "얇은";
+"light" = "밝은";
+"regular" = "일반";
+"medium" = "중간";
+"semibold" = "반볼드";
+"bold" = "볼드체";
+"heavy" = "무거운";
+"black" = "검은색";
+
+// MARK: - Font Design
+"Design" = "설계";
+"default" = "기본";
+"monospaced" = "고정 폭";
+"rounded" = "둥근";
+"serif" = "세리프";
+
+// MARK: - Text
+"Auto Correction" = "자동 보정";
+
+// MARK: - System
+"Hide Status Bar" = "상태 표시줄 숨기기";
+"Single Mode" = "단일 모드";
