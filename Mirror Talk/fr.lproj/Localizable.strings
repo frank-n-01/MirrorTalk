@@ -33,4 +33,6 @@
 
 // MARK: - System
 "Hide Status Bar" = "Masquer la barre d'état";
+
+// MARK: - Mode
 "Single Mode" = "Monomode";

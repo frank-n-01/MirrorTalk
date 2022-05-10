@@ -33,4 +33,6 @@
 
 // MARK: - System
 "Hide Status Bar" = "Durum çubuğunu gizle";
+
+// MARK: - Mode
 "Single Mode" = "Tek mod";

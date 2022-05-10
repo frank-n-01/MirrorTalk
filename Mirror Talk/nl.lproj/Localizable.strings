@@ -33,4 +33,6 @@
 
 // MARK: - System
 "Hide Status Bar" = "Verberg status balk";
+
+// MARK: - Mode
 "Single Mode" = "Enkele modus";

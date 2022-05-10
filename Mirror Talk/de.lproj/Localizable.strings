@@ -33,4 +33,6 @@
 
 // MARK: - System
 "Hide Status Bar" = "Statusleiste verstecken";
+
+// MARK: - Mode
 "Single Mode" = "Einzelmodus";

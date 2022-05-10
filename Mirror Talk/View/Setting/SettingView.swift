@@ -11,6 +11,7 @@ struct SettingView: View {
             Form {
                 FontSetting(viewModel: viewModel)
                 TextSetting(viewModel: viewModel)
+                ModeSetting(viewModel: viewModel)
                 SystemSetting(viewModel: viewModel)
             }
             .navigationTitle("Setting")

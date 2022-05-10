@@ -2,12 +2,12 @@
 
 import SwiftUI
 
-struct SystemSetting: View {
+struct ModeSetting: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     
     var body: some View {
         Section {
-            Toggle("Hide Status Bar", isOn: $viewModel.system.hideStatusBar)
+            Toggle("Single Mode", isOn: $viewModel.system.isSingleMode)
                 .font(CommonStyle.LABEL_FONT)
         }
     }

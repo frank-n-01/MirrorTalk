@@ -33,4 +33,6 @@
 
 // MARK: - System
 "Hide Status Bar" = "ステータスバーを非表示";
+
+// MARK: - Mode
 "Single Mode" = "シングルモード";
