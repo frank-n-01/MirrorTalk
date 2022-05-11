@@ -1,5 +1,5 @@
 # Mirror Talk
-Reflect your heart.
+The repository of iOS app.
 
 ## Description
 Support your face-to-face writing communication: reflect your message so the person in front of you can read it immediately.
