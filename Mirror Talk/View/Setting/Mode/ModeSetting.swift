@@ -9,6 +9,8 @@ struct ModeSetting: View {
         Section {
             Toggle("Single Mode", isOn: $viewModel.system.isSingleMode)
                 .font(CommonStyle.LABEL_FONT)
+        } footer: {
+            Text("single_mode_description")
         }
     }
 }

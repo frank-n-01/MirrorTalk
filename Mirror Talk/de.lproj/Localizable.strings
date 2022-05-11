@@ -36,3 +36,4 @@
 
 // MARK: - Mode
 "Single Mode" = "Einzelmodus";
+"single_mode_description" = "Nur den Texteditor anzeigen.";

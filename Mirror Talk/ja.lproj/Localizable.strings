@@ -36,3 +36,4 @@
 
 // MARK: - Mode
 "Single Mode" = "シングルモード";
+"single_mode_description" = "テキストエディタのみを表示します。";

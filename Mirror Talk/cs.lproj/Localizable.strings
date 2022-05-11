@@ -36,3 +36,4 @@
 
 // MARK: - Mode
 "Single Mode" = "Jediný režim";
+"single_mode_description" = "Zobrazit pouze textový editor.";
