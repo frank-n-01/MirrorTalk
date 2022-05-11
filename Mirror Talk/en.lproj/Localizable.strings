@@ -1,7 +1,7 @@
 // Copyright © 2022 Ni Fu. All rights reserved.
 
 // MARK: - Setting
-"Setting" = "Setting";
+"Setting" = "Settings";
 "Done" = "Done";
 
 // MARK: - Header
@@ -33,4 +33,7 @@
 
 // MARK: - System
 "Hide Status Bar" = "Hide Status Bar";
+
+// MARK: - Mode
 "Single Mode" = "Single Mode";
+"single_mode_description" = "Show the text editor only.";

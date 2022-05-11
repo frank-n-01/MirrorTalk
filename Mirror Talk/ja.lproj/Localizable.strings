@@ -33,4 +33,7 @@
 
 // MARK: - System
 "Hide Status Bar" = "ステータスバーを非表示";
+
+// MARK: - Mode
 "Single Mode" = "シングルモード";
+"single_mode_description" = "テキストエディタのみを表示します。";

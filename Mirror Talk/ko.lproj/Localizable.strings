@@ -33,4 +33,7 @@
 
 // MARK: - System
 "Hide Status Bar" = "상태 표시줄 숨기기";
+
+// MARK: - Mode
 "Single Mode" = "단일 모드";
+"single_mode_description" = "텍스트 편집기만 표시합니다.";

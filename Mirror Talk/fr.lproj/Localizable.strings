@@ -33,4 +33,7 @@
 
 // MARK: - System
 "Hide Status Bar" = "Masquer la barre d'état";
+
+// MARK: - Mode
 "Single Mode" = "Monomode";
+"single_mode_description" = "Afficher uniquement l'éditeur de texte.";

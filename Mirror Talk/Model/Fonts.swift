@@ -11,19 +11,17 @@ struct Fonts {
     
     var weight: FontWeight {
         didSet {
-            UserDefaults.standard.set(weight.rawValue,
-                                      forKey: UDKey.fontWeight.rawValue)
+            UserDefaults.standard.set(weight.rawValue, forKey: UDKey.fontWeight.rawValue)
         }
     }
 
     var design: FontDesign {
         didSet {
-            UserDefaults.standard.set(design.rawValue,
-                                      forKey: UDKey.fontDesign.rawValue)
+            UserDefaults.standard.set(design.rawValue, forKey: UDKey.fontDesign.rawValue)
         }
     }
 
-    static let SIZE: CGFloat = 30.0
+    static let SIZE: CGFloat = 50.0
     static let WEIGHT: FontWeight = .regular
     static let DESIGN: FontDesign = .defaultDesign
     static let SIZE_RANGE: ClosedRange<CGFloat> = 10...1000
@@ -40,7 +38,6 @@ struct Fonts {
             
             self.weight = FontWeight(rawValue: UserDefaults.standard.integer(
                 forKey: UDKey.fontWeight.rawValue)) ?? Self.WEIGHT
-            
             self.design = FontDesign(rawValue: UserDefaults.standard.integer(
                 forKey: UDKey.fontDesign.rawValue)) ?? Self.DESIGN
         } else {
@@ -50,10 +47,8 @@ struct Fonts {
             
             // Save the default values.
             UserDefaults.standard.set(Self.SIZE, forKey: UDKey.fontSize.rawValue)
-            UserDefaults.standard.set(Self.WEIGHT.rawValue,
-                                      forKey: UDKey.fontWeight.rawValue)
-            UserDefaults.standard.set(Self.DESIGN.rawValue,
-                                      forKey: UDKey.fontDesign.rawValue)
+            UserDefaults.standard.set(Self.WEIGHT.rawValue, forKey: UDKey.fontWeight.rawValue)
+            UserDefaults.standard.set(Self.DESIGN.rawValue, forKey: UDKey.fontDesign.rawValue)
         }
     }
 }

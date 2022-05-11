@@ -33,4 +33,7 @@
 
 // MARK: - System
 "Hide Status Bar" = "Ocultar Barra de Status";
+
+// MARK: - Mode
 "Single Mode" = "Modo Único";
+"single_mode_description" = "Mostrar apenas o editor de texto.";

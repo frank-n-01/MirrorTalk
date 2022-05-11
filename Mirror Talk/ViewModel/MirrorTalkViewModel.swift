@@ -11,9 +11,7 @@ class MirrorTalkViewModel: ObservableObject {
     }
     
     @Published var fonts: Fonts
-    
     @Published var texts: Texts
-    
     @Published var system: Systems
     
     static var isInitialized: Bool {
@@ -21,9 +19,11 @@ class MirrorTalkViewModel: ObservableObject {
             forKey: UDKey.isInitialized.rawValue)
     }
     
+    static let DEFAULT_MESSAGE = "😊 "
+    
     init() {
         self.message = UserDefaults.standard.string(
-            forKey: UDKey.message.rawValue) ?? ""
+            forKey: UDKey.message.rawValue) ?? Self.DEFAULT_MESSAGE
         
         self.fonts = Fonts()
         self.texts = Texts()

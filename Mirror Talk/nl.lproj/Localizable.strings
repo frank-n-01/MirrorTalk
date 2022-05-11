@@ -33,4 +33,7 @@
 
 // MARK: - System
 "Hide Status Bar" = "Verberg status balk";
+
+// MARK: - Mode
 "Single Mode" = "Enkele modus";
+"single_mode_description" = "Alleen de teksteditor weergeven.";

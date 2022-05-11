@@ -33,4 +33,7 @@
 
 // MARK: - System
 "Hide Status Bar" = "隐藏状态栏";
+
+// MARK: - Mode
 "Single Mode" = "单一模式";
+"single_mode_description" = "仅显示文本编辑器。";

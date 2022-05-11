@@ -33,4 +33,7 @@
 
 // MARK: - System
 "Hide Status Bar" = "Skrýt stavový řádek";
+
+// MARK: - Mode
 "Single Mode" = "Jediný režim";
+"single_mode_description" = "Zobrazit pouze textový editor.";
