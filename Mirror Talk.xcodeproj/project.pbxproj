@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		65272FCC27C26A940013079E /* SystemSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65272FCB27C26A940013079E /* SystemSetting.swift */; };
 		65272FCF27C272540013079E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65272FD127C272540013079E /* Localizable.strings */; };
+		65456718286C9912005CA8B0 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65456717286C9912005CA8B0 /* PersistenceController.swift */; };
 		65520D28282AAC8900BF2B9D /* ModeSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65520D27282AAC8900BF2B9D /* ModeSetting.swift */; };
+		65520D2C282E9AFE00BF2B9D /* Mirror Talk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65520D2A282E9AFE00BF2B9D /* Mirror Talk.xcdatamodeld */; };
 		6560493027AC1E280037C20B /* Mirror_TalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560492F27AC1E280037C20B /* Mirror_TalkApp.swift */; };
 		6560493227AC1E280037C20B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560493127AC1E280037C20B /* ContentView.swift */; };
 		6560493427AC1E2A0037C20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6560493327AC1E2A0037C20B /* Assets.xcassets */; };
@@ -64,7 +66,9 @@
 		65272FD327C2725E0013079E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		65272FD427C2725F0013079E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		65272FD527C2725F0013079E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		65456717286C9912005CA8B0 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
 		65520D27282AAC8900BF2B9D /* ModeSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSetting.swift; sourceTree = "<group>"; };
+		65520D2B282E9AFE00BF2B9D /* Mirror Talk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Mirror Talk.xcdatamodel"; sourceTree = "<group>"; };
 		6560492C27AC1E280037C20B /* Mirror Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mirror Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6560492F27AC1E280037C20B /* Mirror_TalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mirror_TalkApp.swift; sourceTree = "<group>"; };
 		6560493127AC1E280037C20B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -146,6 +150,15 @@
 				65520D27282AAC8900BF2B9D /* ModeSetting.swift */,
 			);
 			path = Mode;
+			sourceTree = "<group>";
+		};
+		65520D29282E9A8400BF2B9D /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				65520D2A282E9AFE00BF2B9D /* Mirror Talk.xcdatamodeld */,
+				65456717286C9912005CA8B0 /* PersistenceController.swift */,
+			);
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 		6560492327AC1E280037C20B = {
@@ -246,6 +259,7 @@
 				65DC012327C09F95005D3B87 /* Text */,
 				65AB672727DC2A2500FA96A8 /* System */,
 				65DC012C27C208C8005D3B87 /* UserDefaults */,
+				65520D29282E9A8400BF2B9D /* Core Data */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -525,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6560496827B2C5530037C20B /* TextEditorView.swift in Sources */,
+				65520D2C282E9AFE00BF2B9D /* Mirror Talk.xcdatamodeld in Sources */,
 				65DC012527C09FDB005D3B87 /* TextAlignments.swift in Sources */,
 				65DC012E27C2107A005D3B87 /* Texts.swift in Sources */,
 				65272FCC27C26A940013079E /* SystemSetting.swift in Sources */,
@@ -532,6 +547,7 @@
 				6560493227AC1E280037C20B /* ContentView.swift in Sources */,
 				656BE18228046DD300B32BA6 /* CommonStyle.swift in Sources */,
 				6560499427BFE56E0037C20B /* FontSetting.swift in Sources */,
+				65456718286C9912005CA8B0 /* PersistenceController.swift in Sources */,
 				6560498F27BFE0500037C20B /* FontWeight.swift in Sources */,
 				6560497327B3FBDA0037C20B /* ShareButtonWithPopover.swift in Sources */,
 				6560496027B2B8600037C20B /* MirrorTalkView.swift in Sources */,
@@ -907,6 +923,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65520D2A282E9AFE00BF2B9D /* Mirror Talk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65520D2B282E9AFE00BF2B9D /* Mirror Talk.xcdatamodel */,
+			);
+			currentVersion = 65520D2B282E9AFE00BF2B9D /* Mirror Talk.xcdatamodel */;
+			path = "Mirror Talk.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6560492427AC1E280037C20B /* Project object */;
 }
