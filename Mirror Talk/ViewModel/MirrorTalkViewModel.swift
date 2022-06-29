@@ -37,6 +37,8 @@ class MirrorTalkViewModel: ObservableObject {
     
     /// Clear the message and save it if the history mode is ON.
     func clear(_ context: NSManagedObjectContext) {
+        if message.isEmpty { return }
+        
         guard system.isHistoryMode else {
             message = ""
             return
@@ -45,10 +47,10 @@ class MirrorTalkViewModel: ObservableObject {
         let history = History(context: context)
         history.message = message
         history.date = Date()
+        message = ""
         
         if context.hasChanges {
             try? context.save()
         }
-        message = ""
     }
 }

@@ -6,12 +6,7 @@ import CoreData
 struct MirrorTalkView: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     @FocusState private var isFocused: Bool
-    
     @Environment(\.managedObjectContext) var context
-    @FetchRequest(
-        entity: History.entity(),
-        sortDescriptors: [NSSortDescriptor(keyPath: \History.date, ascending: false)]
-    ) var histories: FetchedResults<History>
     
     var body: some View {
         GeometryReader { _ in
@@ -20,7 +15,6 @@ struct MirrorTalkView: View {
                     ReflectedText(viewModel: viewModel)
                     Divider()
                 }
-                Text(histories.first?.message ?? "none")
                 TextEditorView(viewModel: viewModel, isFocused: _isFocused)
             }
             .toolbar {
