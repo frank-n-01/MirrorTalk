@@ -8,17 +8,15 @@ struct HistorySetting: View {
     var body: some View {
         Section {
             Group {
-                Toggle("Auto Save", isOn: $viewModel.system.isHistoryMode)
-                
                 NavigationLink {
                     HistoryList()
                 } label: {
-                    Text("Record")
+                    Label("History", systemImage: "clock")
                 }
+                
+                Toggle("Auto Save", isOn: $viewModel.system.isHistoryMode)
             }
             .font(CommonStyle.LABEL_FONT)
-        } header: {
-            Text("History")
         }
     }
 }
