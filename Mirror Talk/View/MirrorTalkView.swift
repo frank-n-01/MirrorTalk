@@ -45,13 +45,9 @@ struct MirrorTalkView: View {
         }
     }
 
-    var isPad: Bool {
-        UIDevice().userInterfaceIdiom == .pad
-    }
-
     var shareButton: some View {
         Group {
-            if isPad {
+            if UIDevice().userInterfaceIdiom == .pad {
                 ShareButtonWithPopover(
                     message: $viewModel.message, isFocused: _isFocused)
             } else {
