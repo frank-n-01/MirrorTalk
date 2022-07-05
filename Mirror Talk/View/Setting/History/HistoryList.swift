@@ -9,10 +9,12 @@ struct HistoryList: View {
         entity: History.entity(),
         sortDescriptors: [NSSortDescriptor(keyPath: \History.date, ascending: false)]
     ) var records: FetchedResults<History>
+    
+    @State private var searchText = ""
 
     var body: some View {
         List {
-            ForEach(records, id: \.self) { record in
+            ForEach(searchResult, id: \.self) { record in
                 VStack(alignment: .leading, spacing: 5.0) {
                     Text(record.message ?? "")
                         .font(.headline)
@@ -34,23 +36,25 @@ struct HistoryList: View {
                 .padding(.vertical, 5.0)
             }
             .onDelete { offsets in
-                guard !records.isEmpty else { return }
+                guard !searchResult.isEmpty else { return }
                 for i in offsets {
-                    context.delete(records[i])
+                    context.delete(searchResult[i])
                 }
                 if context.hasChanges {
                     try? context.save()
                 }
             }
         }
+        .searchable(text: $searchText)
         .navigationTitle("History")
         .navigationBarTitleDisplayMode(.large)
         .listStyle(.plain)
-        .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                EditButton()
-                    .padding()
-            }
+    }
+    
+    var searchResult: [History] {
+        records.filter { history in
+            guard !searchText.isEmpty else { return true }
+            return history.message?.localizedStandardContains(searchText) ?? false
         }
     }
 }
