@@ -22,12 +22,7 @@ struct HistoryList: View {
                         Text(DateFormatter.localizedString(
                             from: record.date ?? Date(),
                             dateStyle: .medium, timeStyle: .none))
-                        
-                        if UIDevice().userInterfaceIdiom == .pad {
-                            HiddenActivityButtonWithPopover(message: record.message ?? "")
-                        } else {
-                            HiddenActivityButtonWithSheet(message: record.message ?? "")
-                        }
+                        HiddenShareButton(message: record.message ?? "")
                         Spacer()
                         Text(DateFormatter.localizedString(
                             from: record.date ?? Date(),
@@ -56,34 +51,6 @@ struct HistoryList: View {
                 EditButton()
                     .padding()
             }
-        }
-    }
-}
-
-struct HiddenActivityButtonWithSheet: View {
-    var message: String
-    @State private var show = false
-    
-    var body: some View {
-        Button("") {
-            show.toggle()
-        }
-        .sheet(isPresented: $show) {
-            ShareActivityView([message] as [Any])
-        }
-    }
-}
-
-struct HiddenActivityButtonWithPopover: View {
-    var message: String
-    @State private var show = false
-    
-    var body: some View {
-        Button("") {
-            show.toggle()
-        }
-        .popover(isPresented: $show) {
-            ShareActivityView([message] as [Any])
         }
     }
 }

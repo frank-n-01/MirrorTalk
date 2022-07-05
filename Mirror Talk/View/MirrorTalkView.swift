@@ -33,7 +33,7 @@ struct MirrorTalkView: View {
 
     var toolbarButtons: some View {
         Group {
-            shareButton
+            ShareButton(message: $viewModel.message, isFocused: _isFocused)
             Spacer()
             KeyboardButton(isFocused: _isFocused)
             Spacer()
@@ -42,18 +42,6 @@ struct MirrorTalkView: View {
             }
             Spacer()
             SettingButton(viewModel: viewModel, isFocused: _isFocused)
-        }
-    }
-
-    var shareButton: some View {
-        Group {
-            if UIDevice().userInterfaceIdiom == .pad {
-                ShareButtonWithPopover(
-                    message: $viewModel.message, isFocused: _isFocused)
-            } else {
-                ShareButtonWithSheet(
-                    message: $viewModel.message, isFocused: _isFocused)
-            }
         }
     }
 }
