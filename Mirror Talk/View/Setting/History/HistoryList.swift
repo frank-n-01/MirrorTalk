@@ -14,12 +14,11 @@ struct HistoryList: View {
 
     var body: some View {
         List {
-            ForEach(searchResult, id: \.self) { record in
+            ForEach(searchResults, id: \.self) { record in
                 VStack(alignment: .leading, spacing: 5.0) {
                     Text(record.message ?? "")
                         .font(.headline)
                         .foregroundColor(.primary)
-                    
                     HStack {
                         Text(DateFormatter.localizedString(
                             from: record.date ?? Date(),
@@ -36,22 +35,22 @@ struct HistoryList: View {
                 .padding(.vertical, 5.0)
             }
             .onDelete { offsets in
-                guard !searchResult.isEmpty else { return }
+                guard !searchResults.isEmpty else { return }
                 for i in offsets {
-                    context.delete(searchResult[i])
+                    context.delete(searchResults[i])
                 }
                 if context.hasChanges {
                     try? context.save()
                 }
             }
         }
-        .searchable(text: $searchText)
         .navigationTitle("History")
         .navigationBarTitleDisplayMode(.large)
+        .searchable(text: $searchText)
         .listStyle(.plain)
     }
     
-    var searchResult: [History] {
+    var searchResults: [History] {
         records.filter { history in
             guard !searchText.isEmpty else { return true }
             return history.message?.localizedStandardContains(searchText) ?? false

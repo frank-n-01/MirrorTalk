@@ -35,9 +35,8 @@ class MirrorTalkViewModel: ObservableObject {
         }
     }
     
-    /// Clear the message and save it if the history mode is ON.
     func clear(_ context: NSManagedObjectContext) {
-        if message.isEmpty { return }
+        guard !message.isEmpty else { return }
         
         guard system.isAutoSaveEnabled else {
             message = ""
