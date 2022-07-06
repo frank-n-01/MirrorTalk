@@ -37,3 +37,7 @@
 // MARK: - Mode
 "Single Mode" = "Jediný režim";
 "single_mode_description" = "Zobrazit pouze textový editor.";
+
+// MARK: - History
+"History" = "Historie";
+"Auto Save" = "Auto Save";

@@ -37,3 +37,7 @@
 // MARK: - Mode
 "Single Mode" = "Monomode";
 "single_mode_description" = "Afficher uniquement l'éditeur de texte.";
+
+// MARK: - History
+"History" = "Histoire";
+"Auto Save" = "Sauvegarde automatique";

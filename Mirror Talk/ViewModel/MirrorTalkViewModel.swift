@@ -1,6 +1,7 @@
 // Copyright © 2022 Ni Fu. All rights reserved.
 
 import SwiftUI
+import CoreData
 
 class MirrorTalkViewModel: ObservableObject {
     @Published var message: String {
@@ -34,7 +35,21 @@ class MirrorTalkViewModel: ObservableObject {
         }
     }
     
-    func clear() {
-        self.message = ""
+    func clear(_ context: NSManagedObjectContext) {
+        guard !message.isEmpty else { return }
+        
+        guard system.isAutoSaveEnabled else {
+            message = ""
+            return
+        }
+        
+        let history = History(context: context)
+        history.message = message
+        history.date = Date()
+        message = ""
+        
+        if context.hasChanges {
+            try? context.save()
+        }
     }
 }

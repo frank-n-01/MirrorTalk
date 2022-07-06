@@ -1,10 +1,12 @@
 // Copyright © 2022 Ni Fu. All rights reserved.
 
 import SwiftUI
+import CoreData
 
 struct MirrorTalkView: View {
     @ObservedObject var viewModel: MirrorTalkViewModel
     @FocusState private var isFocused: Bool
+    @Environment(\.managedObjectContext) var context
     
     var body: some View {
         GeometryReader { _ in
@@ -31,29 +33,15 @@ struct MirrorTalkView: View {
 
     var toolbarButtons: some View {
         Group {
-            shareButton
+            ShareButton(message: $viewModel.message, isFocused: _isFocused)
             Spacer()
             KeyboardButton(isFocused: _isFocused)
             Spacer()
-            ClearButton(clear: viewModel.clear)
+            ClearButton {
+                viewModel.clear(context)
+            }
             Spacer()
             SettingButton(viewModel: viewModel, isFocused: _isFocused)
-        }
-    }
-
-    var isPad: Bool {
-        UIDevice().userInterfaceIdiom == .pad
-    }
-
-    var shareButton: some View {
-        Group {
-            if isPad {
-                ShareButtonWithPopover(
-                    message: $viewModel.message, isFocused: _isFocused)
-            } else {
-                ShareButtonWithSheet(
-                    message: $viewModel.message, isFocused: _isFocused)
-            }
         }
     }
 }

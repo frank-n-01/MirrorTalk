@@ -13,4 +13,5 @@ enum UDKey: String {
     case isAutocorrectionEnabed = "is_autocorrection_enabled"
     case hideStatusBar = "hide_status_bar"
     case isSingleMode = "is_single_mode"
+    case isAutoSaveEnabled = "is_auto_save_enabled"
 }

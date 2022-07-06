@@ -9,7 +9,13 @@
 /* Begin PBXBuildFile section */
 		65272FCC27C26A940013079E /* SystemSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65272FCB27C26A940013079E /* SystemSetting.swift */; };
 		65272FCF27C272540013079E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 65272FD127C272540013079E /* Localizable.strings */; };
+		65456718286C9912005CA8B0 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65456717286C9912005CA8B0 /* PersistenceController.swift */; };
+		6545671D286D1201005CA8B0 /* HistorySetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6545671C286D1201005CA8B0 /* HistorySetting.swift */; };
+		6545671F286D1350005CA8B0 /* HistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6545671E286D1350005CA8B0 /* HistoryList.swift */; };
+		6545672128747E45005CA8B0 /* HiddenShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6545672028747E45005CA8B0 /* HiddenShareButton.swift */; };
+		6545672528747F55005CA8B0 /* ShareButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6545672428747F55005CA8B0 /* ShareButton.swift */; };
 		65520D28282AAC8900BF2B9D /* ModeSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65520D27282AAC8900BF2B9D /* ModeSetting.swift */; };
+		65520D2C282E9AFE00BF2B9D /* Mirror Talk.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 65520D2A282E9AFE00BF2B9D /* Mirror Talk.xcdatamodeld */; };
 		6560493027AC1E280037C20B /* Mirror_TalkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560492F27AC1E280037C20B /* Mirror_TalkApp.swift */; };
 		6560493227AC1E280037C20B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560493127AC1E280037C20B /* ContentView.swift */; };
 		6560493427AC1E2A0037C20B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6560493327AC1E2A0037C20B /* Assets.xcassets */; };
@@ -17,15 +23,12 @@
 		6560494127AC1E2A0037C20B /* Mirror_TalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560494027AC1E2A0037C20B /* Mirror_TalkTests.swift */; };
 		6560494B27AC1E2A0037C20B /* Mirror_TalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560494A27AC1E2A0037C20B /* Mirror_TalkUITests.swift */; };
 		6560494D27AC1E2A0037C20B /* Mirror_TalkUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560494C27AC1E2A0037C20B /* Mirror_TalkUITestsLaunchTests.swift */; };
-		6560495B27AD76EB0037C20B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6560495A27AD76EB0037C20B /* AVFoundation.framework */; };
 		6560495E27B2B8340037C20B /* MirrorTalkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560495D27B2B8340037C20B /* MirrorTalkViewModel.swift */; };
 		6560496027B2B8600037C20B /* MirrorTalkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560495F27B2B8600037C20B /* MirrorTalkView.swift */; };
 		6560496627B2C3450037C20B /* ReflectedText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560496527B2C3450037C20B /* ReflectedText.swift */; };
 		6560496827B2C5530037C20B /* TextEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560496727B2C5530037C20B /* TextEditorView.swift */; };
 		6560497127B3FB490037C20B /* ClearButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497027B3FB490037C20B /* ClearButton.swift */; };
-		6560497327B3FBDA0037C20B /* ShareButtonWithPopover.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497227B3FBDA0037C20B /* ShareButtonWithPopover.swift */; };
 		6560497527B3FCB70037C20B /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497427B3FCB70037C20B /* SettingButton.swift */; };
-		6560497B27B55C4D0037C20B /* ShareButtonWithSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497A27B55C4D0037C20B /* ShareButtonWithSheet.swift */; };
 		6560497D27B55F8F0037C20B /* ShareActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497C27B55F8F0037C20B /* ShareActivityView.swift */; };
 		6560497F27B5633C0037C20B /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560497E27B5633C0037C20B /* KeyboardButton.swift */; };
 		6560498327BBECC90037C20B /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560498227BBECC90037C20B /* SettingView.swift */; };
@@ -65,7 +68,13 @@
 		65272FD327C2725E0013079E /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		65272FD427C2725F0013079E /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		65272FD527C2725F0013079E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		65456717286C9912005CA8B0 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		6545671C286D1201005CA8B0 /* HistorySetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistorySetting.swift; sourceTree = "<group>"; };
+		6545671E286D1350005CA8B0 /* HistoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryList.swift; sourceTree = "<group>"; };
+		6545672028747E45005CA8B0 /* HiddenShareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HiddenShareButton.swift; sourceTree = "<group>"; };
+		6545672428747F55005CA8B0 /* ShareButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButton.swift; sourceTree = "<group>"; };
 		65520D27282AAC8900BF2B9D /* ModeSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSetting.swift; sourceTree = "<group>"; };
+		65520D2B282E9AFE00BF2B9D /* Mirror Talk.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Mirror Talk.xcdatamodel"; sourceTree = "<group>"; };
 		6560492C27AC1E280037C20B /* Mirror Talk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mirror Talk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6560492F27AC1E280037C20B /* Mirror_TalkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mirror_TalkApp.swift; sourceTree = "<group>"; };
 		6560493127AC1E280037C20B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -83,9 +92,7 @@
 		6560496527B2C3450037C20B /* ReflectedText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReflectedText.swift; sourceTree = "<group>"; };
 		6560496727B2C5530037C20B /* TextEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorView.swift; sourceTree = "<group>"; };
 		6560497027B3FB490037C20B /* ClearButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClearButton.swift; sourceTree = "<group>"; };
-		6560497227B3FBDA0037C20B /* ShareButtonWithPopover.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonWithPopover.swift; sourceTree = "<group>"; };
 		6560497427B3FCB70037C20B /* SettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
-		6560497A27B55C4D0037C20B /* ShareButtonWithSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareButtonWithSheet.swift; sourceTree = "<group>"; };
 		6560497C27B55F8F0037C20B /* ShareActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareActivityView.swift; sourceTree = "<group>"; };
 		6560497E27B5633C0037C20B /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
 		6560498227BBECC90037C20B /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
@@ -113,7 +120,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6560495B27AD76EB0037C20B /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,12 +148,30 @@
 			path = System;
 			sourceTree = "<group>";
 		};
+		6545671B286D1107005CA8B0 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				6545671C286D1201005CA8B0 /* HistorySetting.swift */,
+				6545671E286D1350005CA8B0 /* HistoryList.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
 		65520D26282AAC5F00BF2B9D /* Mode */ = {
 			isa = PBXGroup;
 			children = (
 				65520D27282AAC8900BF2B9D /* ModeSetting.swift */,
 			);
 			path = Mode;
+			sourceTree = "<group>";
+		};
+		65520D29282E9A8400BF2B9D /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				65520D2A282E9AFE00BF2B9D /* Mirror Talk.xcdatamodeld */,
+				65456717286C9912005CA8B0 /* PersistenceController.swift */,
+			);
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 		6560492327AC1E280037C20B = {
@@ -248,6 +272,7 @@
 				65DC012327C09F95005D3B87 /* Text */,
 				65AB672727DC2A2500FA96A8 /* System */,
 				65DC012C27C208C8005D3B87 /* UserDefaults */,
+				65520D29282E9A8400BF2B9D /* Core Data */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -288,6 +313,7 @@
 				6560499227BFE55C0037C20B /* Font */,
 				65520D26282AAC5F00BF2B9D /* Mode */,
 				65272FCA27C26A230013079E /* System */,
+				6545671B286D1107005CA8B0 /* History */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -295,8 +321,8 @@
 		6560498527BBEF7C0037C20B /* Share */ = {
 			isa = PBXGroup;
 			children = (
-				6560497227B3FBDA0037C20B /* ShareButtonWithPopover.swift */,
-				6560497A27B55C4D0037C20B /* ShareButtonWithSheet.swift */,
+				6545672428747F55005CA8B0 /* ShareButton.swift */,
+				6545672028747E45005CA8B0 /* HiddenShareButton.swift */,
 			);
 			path = Share;
 			sourceTree = "<group>";
@@ -527,19 +553,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				6560496827B2C5530037C20B /* TextEditorView.swift in Sources */,
+				65520D2C282E9AFE00BF2B9D /* Mirror Talk.xcdatamodeld in Sources */,
 				65DC012527C09FDB005D3B87 /* TextAlignments.swift in Sources */,
 				65DC012E27C2107A005D3B87 /* Texts.swift in Sources */,
 				65272FCC27C26A940013079E /* SystemSetting.swift in Sources */,
+				6545672128747E45005CA8B0 /* HiddenShareButton.swift in Sources */,
+				6545671F286D1350005CA8B0 /* HistoryList.swift in Sources */,
 				6560496627B2C3450037C20B /* ReflectedText.swift in Sources */,
 				6560493227AC1E280037C20B /* ContentView.swift in Sources */,
 				656BE18228046DD300B32BA6 /* CommonStyle.swift in Sources */,
 				6560499427BFE56E0037C20B /* FontSetting.swift in Sources */,
+				65456718286C9912005CA8B0 /* PersistenceController.swift in Sources */,
 				6560498F27BFE0500037C20B /* FontWeight.swift in Sources */,
-				6560497327B3FBDA0037C20B /* ShareButtonWithPopover.swift in Sources */,
 				6560496027B2B8600037C20B /* MirrorTalkView.swift in Sources */,
 				6560497F27B5633C0037C20B /* KeyboardButton.swift in Sources */,
 				6560498327BBECC90037C20B /* SettingView.swift in Sources */,
-				6560497B27B55C4D0037C20B /* ShareButtonWithSheet.swift in Sources */,
 				65DC012927C1D3CD005D3B87 /* TextSetting.swift in Sources */,
 				65AB672927DC2A3F00FA96A8 /* Systems.swift in Sources */,
 				6560493027AC1E280037C20B /* Mirror_TalkApp.swift in Sources */,
@@ -547,6 +575,8 @@
 				6560497527B3FCB70037C20B /* SettingButton.swift in Sources */,
 				6560495E27B2B8340037C20B /* MirrorTalkViewModel.swift in Sources */,
 				6560497D27B55F8F0037C20B /* ShareActivityView.swift in Sources */,
+				6545671D286D1201005CA8B0 /* HistorySetting.swift in Sources */,
+				6545672528747F55005CA8B0 /* ShareButton.swift in Sources */,
 				6560497127B3FB490037C20B /* ClearButton.swift in Sources */,
 				65520D28282AAC8900BF2B9D /* ModeSetting.swift in Sources */,
 				65DC012B27C202ED005D3B87 /* UDKey.swift in Sources */,
@@ -733,7 +763,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Mirror Talk/Preview Content\"";
 				DEVELOPMENT_TEAM = GKDU4N5FBR;
 				ENABLE_PREVIEWS = YES;
@@ -751,7 +781,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ni-Fu.Mirror-Talk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -766,7 +796,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"Mirror Talk/Preview Content\"";
 				DEVELOPMENT_TEAM = GKDU4N5FBR;
 				ENABLE_PREVIEWS = YES;
@@ -784,7 +814,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ni-Fu.Mirror-Talk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -909,6 +939,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		65520D2A282E9AFE00BF2B9D /* Mirror Talk.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				65520D2B282E9AFE00BF2B9D /* Mirror Talk.xcdatamodel */,
+			);
+			currentVersion = 65520D2B282E9AFE00BF2B9D /* Mirror Talk.xcdatamodel */;
+			path = "Mirror Talk.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 6560492427AC1E280037C20B /* Project object */;
 }
