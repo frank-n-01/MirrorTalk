@@ -37,3 +37,7 @@
 // MARK: - Mode
 "Single Mode" = "單一模式";
 "single_mode_description" = "僅顯示文本編輯器。";
+
+// MARK: - History
+"History" = "紀錄";
+"Auto Save" = "自動保存";

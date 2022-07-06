@@ -37,3 +37,7 @@
 // MARK: - Mode
 "Single Mode" = "Tek mod";
 "single_mode_description" = "Yalnızca metin düzenleyiciyi göster.";
+
+// MARK: - History
+"History" = "Kayıtlar";
+"Auto Save" = "Otomatik Kaydet";
