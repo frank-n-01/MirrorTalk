@@ -14,7 +14,7 @@ struct HistorySetting: View {
                     Label("History", systemImage: "clock")
                 }
                 
-                Toggle("Auto Save", isOn: $viewModel.system.isHistoryMode)
+                Toggle("Auto Save", isOn: $viewModel.system.isAutoSaveEnabled)
             }
             .font(CommonStyle.LABEL_FONT)
         }
