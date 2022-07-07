@@ -1,13 +1,8 @@
 // Copyright © 2022 Ni Fu. All rights reserved.
 
 // MARK: - Setting
-"Setting" = "Ayarlar";
+"Settings" = "Ayarlar";
 "Done" = "Bitti";
-
-// MARK: - Header
-"Font" = "Yazı tipi";
-"Text" = "Metin";
-"System" = "sistem";
 
 // MARK: - Font Weight
 "Weight" = "Ağırlık";
@@ -32,11 +27,8 @@
 "Auto Correction" = "Otomatik düzeltme";
 
 // MARK: - System
-"Hide Status Bar" = "Durum çubuğunu gizle";
-
-// MARK: - Mode
 "Single Mode" = "Tek mod";
-"single_mode_description" = "Yalnızca metin düzenleyiciyi göster.";
+"Hide Status Bar" = "Durum çubuğunu gizle";
 
 // MARK: - History
 "History" = "Kayıtlar";

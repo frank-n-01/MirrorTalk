@@ -17,8 +17,6 @@ struct TextSetting: View {
 
             Toggle("Auto Correction", isOn: $viewModel.texts.isAutocorrectionEnabled)
                 .font(CommonStyle.LABEL_FONT)
-        } header: {
-            Text("Text")
         }
     }
 }

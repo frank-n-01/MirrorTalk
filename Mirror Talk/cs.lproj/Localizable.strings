@@ -1,13 +1,8 @@
 // Copyright © 2022 Ni Fu. All rights reserved.
 
 // MARK: - Setting
-"Setting" = "Nastavení";
+"Settings" = "Nastavení";
 "Done" = "Hotovo";
-
-// MARK: - Header
-"Font" = "Písmo";
-"Text" = "Text";
-"System" = "Systém";
 
 // MARK: - Font Weight
 "Weight" = "Hmotnost";
@@ -32,11 +27,8 @@
 "Auto Correction" = "Automatická oprava";
 
 // MARK: - System
-"Hide Status Bar" = "Skrýt stavový řádek";
-
-// MARK: - Mode
 "Single Mode" = "Jediný režim";
-"single_mode_description" = "Zobrazit pouze textový editor.";
+"Hide Status Bar" = "Skrýt stavový řádek";
 
 // MARK: - History
 "History" = "Historie";

@@ -1,13 +1,8 @@
 // Copyright © 2022 Ni Fu. All rights reserved.
 
 // MARK: - Setting
-"Setting" = "設定";
+"Settings" = "設定";
 "Done" = "完了";
-
-// MARK: - Header
-"Font" = "フォント";
-"Text" = "テキスト";
-"System" = "システム";
 
 // MARK: - Font Weight
 "Weight" = "太さ";
@@ -32,11 +27,8 @@
 "Auto Correction" = "自動補正";
 
 // MARK: - System
-"Hide Status Bar" = "ステータスバーを非表示";
-
-// MARK: - Mode
 "Single Mode" = "シングルモード";
-"single_mode_description" = "テキストエディタのみを表示します。";
+"Hide Status Bar" = "ステータスバーを非表示";
 
 // MARK: - History
 "History" = "履歴";

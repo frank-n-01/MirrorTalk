@@ -1,13 +1,8 @@
 // Copyright © 2022 Ni Fu. All rights reserved.
 
 // MARK: - Setting
-"Setting" = "設定";
+"Settings" = "設定";
 "Done" = "完成";
-
-// MARK: - Header
-"Font" = "字體";
-"Text" = "文本";
-"System" = "系統";
 
 // MARK: - Font Weight
 "Weight" = "粗細";
@@ -32,11 +27,8 @@
 "Auto Correction" = "自動改正";
 
 // MARK: - System
-"Hide Status Bar" = "隱藏狀態欄";
-
-// MARK: - Mode
 "Single Mode" = "單一模式";
-"single_mode_description" = "僅顯示文本編輯器。";
+"Hide Status Bar" = "隱藏狀態欄";
 
 // MARK: - History
 "History" = "紀錄";

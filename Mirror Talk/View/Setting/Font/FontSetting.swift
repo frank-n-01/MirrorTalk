@@ -10,8 +10,6 @@ struct FontSetting: View {
             sizeStepper
             weightPicker
             designPicker
-        } header: {
-            Text("Font")
         }
     }
 
