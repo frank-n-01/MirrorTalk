@@ -1,13 +1,8 @@
 // Copyright © 2022 Ni Fu. All rights reserved.
 
 // MARK: - Setting
-"Setting" = "Instellingen";
+"Settings" = "Instellingen";
 "Done" = "Gereed";
-
-// MARK: - Header
-"Font" = "Lettertype";
-"Text" = "Tekst";
-"System" = "Systeem";
 
 // MARK: - Font Weight
 "Weight" = "Gewicht";
@@ -32,11 +27,8 @@
 "Auto Correction" = "Auto Correctie";
 
 // MARK: - System
-"Hide Status Bar" = "Verberg status balk";
-
-// MARK: - Mode
 "Single Mode" = "Enkele modus";
-"single_mode_description" = "Alleen de teksteditor weergeven.";
+"Hide Status Bar" = "Verberg status balk";
 
 // MARK: - History
 "History" = "Geschiedenis";

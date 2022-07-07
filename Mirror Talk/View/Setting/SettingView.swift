@@ -11,11 +11,10 @@ struct SettingView: View {
             Form {
                 FontSetting(viewModel: viewModel)
                 TextSetting(viewModel: viewModel)
-                ModeSetting(viewModel: viewModel)
                 SystemSetting(viewModel: viewModel)
                 HistorySetting(viewModel: viewModel)
             }
-            .navigationTitle("Setting")
+            .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {

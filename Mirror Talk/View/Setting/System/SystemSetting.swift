@@ -7,8 +7,11 @@ struct SystemSetting: View {
     
     var body: some View {
         Section {
-            Toggle("Hide Status Bar", isOn: $viewModel.system.hideStatusBar)
-                .font(CommonStyle.LABEL_FONT)
+            Group {
+                Toggle("Single Mode", isOn: $viewModel.system.isSingleMode)
+                Toggle("Hide Status Bar", isOn: $viewModel.system.hideStatusBar)
+            }
+            .font(CommonStyle.LABEL_FONT)
         }
     }
 }

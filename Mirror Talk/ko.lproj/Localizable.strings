@@ -1,13 +1,8 @@
 // Copyright © 2022 Ni Fu. All rights reserved.
 
 // MARK: - Setting
-"Setting" = "설정";
+"Settings" = "설정";
 "Done" = "완료";
-
-// MARK: - Header
-"Font" = "폰트";
-"Text" = "텍스트";
-"System" = "체계";
 
 // MARK: - Font Weight
 "Weight" = "두께";
@@ -32,11 +27,8 @@
 "Auto Correction" = "자동 보정";
 
 // MARK: - System
-"Hide Status Bar" = "상태 표시줄 숨기기";
-
-// MARK: - Mode
 "Single Mode" = "단일 모드";
-"single_mode_description" = "텍스트 편집기만 표시합니다.";
+"Hide Status Bar" = "상태 표시줄 숨기기";
 
 // MARK: - History
 "History" = "역사";
