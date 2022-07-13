@@ -24,7 +24,7 @@ struct Systems {
 
     static let HIDE_STATUS_BAR = true
     static let IS_SINGLE_MODE = false
-    static let IS_AUTO_SAVE_ENABLED = false
+    static let IS_AUTO_SAVE_ENABLED = true
 
     init() {
         if MirrorTalkViewModel.isInitialized {
