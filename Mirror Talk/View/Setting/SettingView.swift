@@ -13,6 +13,7 @@ struct SettingView: View {
                 TextSetting(viewModel: viewModel)
                 SystemSetting(viewModel: viewModel)
                 HistorySetting(viewModel: viewModel)
+                WriteReviewLink()
             }
             .navigationTitle("Settings")
             .navigationBarTitleDisplayMode(.inline)
