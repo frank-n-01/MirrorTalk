@@ -33,3 +33,6 @@
 // MARK: - History
 "History" = "记录";
 "Auto Save" = "自动保存";
+
+// MARK: - Support
+"Write a Review" = "写评论";

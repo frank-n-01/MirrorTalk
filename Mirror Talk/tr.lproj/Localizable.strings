@@ -33,3 +33,6 @@
 // MARK: - History
 "History" = "Kayıtlar";
 "Auto Save" = "Otomatik Kaydet";
+
+// MARK: - Support
+"Write a Review" = "Bir değerlendirme yazın";
