@@ -37,7 +37,7 @@
 		6560499427BFE56E0037C20B /* FontSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6560499327BFE56E0037C20B /* FontSetting.swift */; };
 		656BE18228046DD300B32BA6 /* CommonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656BE18128046DD300B32BA6 /* CommonStyle.swift */; };
 		65AB672927DC2A3F00FA96A8 /* Systems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65AB672827DC2A3F00FA96A8 /* Systems.swift */; };
-		65C4F29928898C70009DB01F /* WriteReviewLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C4F29828898C70009DB01F /* WriteReviewLink.swift */; };
+		65C4F29928898C70009DB01F /* WriteReviewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C4F29828898C70009DB01F /* WriteReviewButton.swift */; };
 		65DC012527C09FDB005D3B87 /* TextAlignments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC012427C09FDB005D3B87 /* TextAlignments.swift */; };
 		65DC012927C1D3CD005D3B87 /* TextSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC012827C1D3CD005D3B87 /* TextSetting.swift */; };
 		65DC012B27C202ED005D3B87 /* UDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC012A27C202ED005D3B87 /* UDKey.swift */; };
@@ -108,7 +108,7 @@
 		656BE17F280468F900B32BA6 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		656BE18128046DD300B32BA6 /* CommonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStyle.swift; sourceTree = "<group>"; };
 		65AB672827DC2A3F00FA96A8 /* Systems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Systems.swift; sourceTree = "<group>"; };
-		65C4F29828898C70009DB01F /* WriteReviewLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewLink.swift; sourceTree = "<group>"; };
+		65C4F29828898C70009DB01F /* WriteReviewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteReviewButton.swift; sourceTree = "<group>"; };
 		65DC012427C09FDB005D3B87 /* TextAlignments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAlignments.swift; sourceTree = "<group>"; };
 		65DC012827C1D3CD005D3B87 /* TextSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSetting.swift; sourceTree = "<group>"; };
 		65DC012A27C202ED005D3B87 /* UDKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UDKey.swift; sourceTree = "<group>"; };
@@ -370,7 +370,7 @@
 		65C4F29728898BF4009DB01F /* Review */ = {
 			isa = PBXGroup;
 			children = (
-				65C4F29828898C70009DB01F /* WriteReviewLink.swift */,
+				65C4F29828898C70009DB01F /* WriteReviewButton.swift */,
 			);
 			path = Review;
 			sourceTree = "<group>";
@@ -560,7 +560,7 @@
 				6545672128747E45005CA8B0 /* HiddenShareButton.swift in Sources */,
 				6545671F286D1350005CA8B0 /* HistoryList.swift in Sources */,
 				6560496627B2C3450037C20B /* ReflectedText.swift in Sources */,
-				65C4F29928898C70009DB01F /* WriteReviewLink.swift in Sources */,
+				65C4F29928898C70009DB01F /* WriteReviewButton.swift in Sources */,
 				6560493227AC1E280037C20B /* ContentView.swift in Sources */,
 				656BE18228046DD300B32BA6 /* CommonStyle.swift in Sources */,
 				6560499427BFE56E0037C20B /* FontSetting.swift in Sources */,

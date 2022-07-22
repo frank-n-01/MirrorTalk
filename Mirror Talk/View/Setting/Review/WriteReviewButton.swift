@@ -2,7 +2,7 @@
 
 import SwiftUI
 
-struct WriteReviewLink: View {
+struct WriteReviewButton: View {
     @Environment(\.openURL) private var openURL
     
     var body: some View {
