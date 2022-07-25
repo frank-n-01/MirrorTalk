@@ -22,7 +22,7 @@ struct HistoryList: View {
                     HStack {
                         Text(DateFormatter.localizedString(
                             from: record.date ?? Date(),
-                            dateStyle: .medium, timeStyle: .none))
+                            dateStyle: .long, timeStyle: .none))
                         HiddenShareButton(message: record.message ?? "")
                         Spacer()
                         Text(DateFormatter.localizedString(
@@ -45,9 +45,7 @@ struct HistoryList: View {
             }
         }
         .toolbar {
-            ToolbarItem(placement: .navigationBarTrailing) {
-                EditButton()
-            }
+            EditButton()
         }
         .navigationTitle("History")
         .navigationBarTitleDisplayMode(.large)

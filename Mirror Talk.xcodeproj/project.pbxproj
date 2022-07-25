@@ -767,7 +767,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Mirror Talk/Preview Content\"";
 				DEVELOPMENT_TEAM = GKDU4N5FBR;
 				ENABLE_PREVIEWS = YES;
@@ -786,7 +786,7 @@
 					"@executable_path/Frameworks",
 				);
 				MAIL_SUPPORT_URL = "mailto:frankn00385@gmail.com?subject=%5BMirror%20Talk%5D%20";
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ni-Fu.Mirror-Talk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -802,7 +802,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_ASSET_PATHS = "\"Mirror Talk/Preview Content\"";
 				DEVELOPMENT_TEAM = GKDU4N5FBR;
 				ENABLE_PREVIEWS = YES;
@@ -821,7 +821,7 @@
 					"@executable_path/Frameworks",
 				);
 				MAIL_SUPPORT_URL = "mailto:frankn00385@gmail.com?subject=%5BMirror%20Talk%5D%20";
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Ni-Fu.Mirror-Talk";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
