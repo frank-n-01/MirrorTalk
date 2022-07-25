@@ -26,7 +26,6 @@ struct SettingView: View {
                         show = false
                     } label: {
                         Text("Done")
-                            .bold()
                     }
                 }
             }
