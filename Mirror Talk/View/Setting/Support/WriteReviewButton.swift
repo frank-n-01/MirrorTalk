@@ -9,8 +9,8 @@ struct WriteReviewButton: View {
         Button {
             if let urlString = Bundle.main.object(
                 forInfoDictionaryKey: "Write Review URL") as? String,
-               let writeReviewUrl = URL(string: urlString) {
-                openURL(writeReviewUrl)
+               let url = URL(string: urlString) {
+                openURL(url)
             }
         } label: {
             Label("Write a Review", systemImage: "square.and.pencil")

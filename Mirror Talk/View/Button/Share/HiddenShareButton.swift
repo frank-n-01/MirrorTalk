@@ -23,7 +23,7 @@ struct HiddenShareButtonWithSheet: View {
             show.toggle()
         }
         .sheet(isPresented: $show) {
-            ShareActivityView([message] as [Any])
+            ActivityView([message] as [Any])
         }
     }
 }
@@ -37,7 +37,7 @@ struct HiddenShareButtonWithPopover: View {
             show.toggle()
         }
         .popover(isPresented: $show) {
-            ShareActivityView([message] as [Any])
+            ActivityView([message] as [Any])
         }
     }
 }
