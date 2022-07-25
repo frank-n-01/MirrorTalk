@@ -44,6 +44,11 @@ struct HistoryList: View {
                 }
             }
         }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                EditButton()
+            }
+        }
         .navigationTitle("History")
         .navigationBarTitleDisplayMode(.large)
         .searchable(text: $searchText)
