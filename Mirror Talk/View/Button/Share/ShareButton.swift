@@ -28,7 +28,7 @@ struct ShareButtonWithSheet: View {
             Image(systemName: "square.and.arrow.up")
         }
         .sheet(isPresented: $show) {
-            ShareActivityView([message] as [Any])
+            ActivityView([message] as [Any])
         }
     }
 }
@@ -46,7 +46,7 @@ struct ShareButtonWithPopover: View {
             Image(systemName: "square.and.arrow.up")
         }
         .popover(isPresented: $show) {
-            ShareActivityView([message] as [Any])
+            ActivityView([message] as [Any])
         }
     }
 }
